@@ -28,16 +28,35 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             _ = post.save { result in
                 switch result {
                 case .success:
-                    print("success")
+                    print("success save post")
                     break
                 case .failure(let error):
                     print("error: \(error)")
                     break
                 }
             }
+            
+            // 2.
+            let todo = LCObject(className: "Todo")
+            
+            try todo.set("title", value: "工程师周会")
+            try todo.set("content", value: "每周工程师会议，周一下午 2 点")
+            
+            _ = todo.save { result in
+                switch result {
+                case .success:
+                    print("success save todo")
+                    break
+                case .failure(let error):
+                    print(error)
+                }
+            }
         } catch {
             print("ERROR")
         }
+        
+        
+        
         
         return true
     }
