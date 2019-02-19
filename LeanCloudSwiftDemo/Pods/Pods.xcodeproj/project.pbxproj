@@ -16,7 +16,7 @@
 		1FC3FD39157C2FFFF3869A1300730086 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B16834D215B74EDCBB8AA2DBC6A5C41 /* SessionDelegate.swift */; };
 		21A4741CBD0B3338ACD72A5DEAB949FC /* LocalStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC9BDF1607A51D8E2F0FC6E5A03495C /* LocalStorage.swift */; };
 		2C4B36A39E0FAF1938534F27AEAA0048 /* Runtime.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3ECB2D2BF784E9961F50AC31321649 /* Runtime.swift */; };
-		31EB456F0970D19801BB5618C8C45604 /* Pods-LeanCloudSwiftDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C26A86F431112FC9B4B23F2CC143594F /* Pods-LeanCloudSwiftDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		31EB456F0970D19801BB5618C8C45604 /* Pods-LeanCloudSwiftDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 60B02C10D5F4E349E1C419E88EC731AA /* Pods-LeanCloudSwiftDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		356C3CF06B172D9A67BEABBDA402DDFA /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E98FF92F7AD21DDF3C4DD22AF2D671B /* Query.swift */; };
 		36FF8853CB34A9297AFAA8F5F7456324 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2B787EDD313E09C91B123BB34DAF9E /* TaskDelegate.swift */; };
 		3AB5D24FC54B6E9C8C663EFA5F8BC08A /* HTTPRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7090FDF584AF41A9F6B13D3F64DAB070 /* HTTPRouter.swift */; };
@@ -33,11 +33,13 @@
 		58A9719584AFA2D108D9E5C585A79329 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FCD5B9E44D18AB8AF037B5FBA49F37 /* Validation.swift */; };
 		5D42D7D3FCFCF3DB2DF7E532C958838D /* SMSClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD883BB68F808FF3D72EEB3B4D904F5 /* SMSClient.swift */; };
 		5EE5FED83B90A606A763CF1114D1D6FB /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB489D87FB5A477904BFA8847689A8D /* ResponseSerialization.swift */; };
+		638C9622C9CC6CF18648026ABE61EC6D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB9F66ED7A250BB1AE2875F8D38C7398 /* Foundation.framework */; };
 		68FD1C6C9CED5E95D56E3E75E87F9A9E /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 706C7AFFE37BA158C3553250F4B5FAED /* Alamofire.framework */; };
 		6BEA14EC335E07C7063CD1383C0C443C /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1987363A8EBC4791234037F62D8392 /* ServerTrustPolicy.swift */; };
 		6D6EA8EEA10517E15B9EFBC7A3887BF2 /* Polyfill.m in Sources */ = {isa = PBXBuildFile; fileRef = F39482AE8ECF1FCA086ED29ACB787175 /* Polyfill.m */; };
 		7068E8A7DDC1424EE8F24BC77E8746F4 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E366C00F43365CD7DA678E38F693B7 /* SessionManager.swift */; };
 		72DB2A344E63071BBF6AA8A967B79851 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4997FB32C436F4D21F854AE446F8F247 /* User.swift */; };
+		7312BDEB7E8A578BBB5B5249BF107465 /* Pods-LeanCloudSwiftDemoTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 55CA76D238150B634839979A52EAB621 /* Pods-LeanCloudSwiftDemoTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		796177DE2762F24DAC16A709FD954838 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9980CDA630D66161453F189D7D3520F /* ParameterEncoding.swift */; };
 		8D1E66FE754A575BFFD9E0A4AD2E5ACC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB9F66ED7A250BB1AE2875F8D38C7398 /* Foundation.framework */; };
 		965DACF3DC02857ECBE66C5CBA3DA5D4 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414724D3FDBAEDEA6E0E86A175762004 /* Request.swift */; };
@@ -57,9 +59,10 @@
 		BE4BA1EDE444A770F834605F4B65348E /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4375977B7A5343D154E582D6870AA64 /* AFError.swift */; };
 		BFD8DCA20C7795BDC2F9A89EDCD22220 /* StorageContextCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BD6742F381F853412420F48DD2D415 /* StorageContextCache.swift */; };
 		C181BAF34B69D6A962DF3F3B7E661992 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85F60F07BDBC18701C0B4D1733DA38E /* Utility.swift */; };
+		C4C3C5FEACC0DA9AB5C55615163DA124 /* Pods-LeanCloudSwiftDemoTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E5A85F78AD36635B021946E9D57AE3C /* Pods-LeanCloudSwiftDemoTests-dummy.m */; };
 		CA57F68A37C3EF952F6514E27A136FD5 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324F74C7A2656995ED8218C4D38E2525 /* Dictionary.swift */; };
 		CDD801AE5C61A68158F2F53B877AA7AD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB9F66ED7A250BB1AE2875F8D38C7398 /* Foundation.framework */; };
-		D05832867F4E70B7429D00F4D1F06C69 /* Pods-LeanCloudSwiftDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F53249E835C25B12AEE2C4D4A1E8C6E9 /* Pods-LeanCloudSwiftDemo-dummy.m */; };
+		D05832867F4E70B7429D00F4D1F06C69 /* Pods-LeanCloudSwiftDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DE0CA36DA0404A22251C0E78AC26A7BD /* Pods-LeanCloudSwiftDemo-dummy.m */; };
 		D1036BFCF7B2DF5BCD28C6D0153EFFD9 /* Polyfill.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B4595EAEAE7BFE13827B69B6ED76593 /* Polyfill.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		D4C3899574E9D5DF5E5DA52310560BCC /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A9BDD166208605B193513F6C97A5B01E /* Alamofire-dummy.m */; };
 		D669D8ADD05EFC9C23442D1ABC491C62 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31503A740C03BF02F9B3D58FF47547C /* File.swift */; };
@@ -92,6 +95,20 @@
 			remoteGlobalIDString = 4368E777484C7FE0DBE427A1BA5B1735;
 			remoteInfo = LeanCloud;
 		};
+		1BF26AC552F5CFCFF95F2773E63C21D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4368E777484C7FE0DBE427A1BA5B1735;
+			remoteInfo = LeanCloud;
+		};
+		252D57EBF294F6453784007FCAEDFF28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E76458C58C9140B6A16D60547E68E80C;
+			remoteInfo = Alamofire;
+		};
 		4880780A9A40BD4382BCA2A3EDF30B39 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
@@ -109,16 +126,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0018B53229F61492D0CC2E5FD2498079 /* Pods-LeanCloudSwiftDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LeanCloudSwiftDemo-frameworks.sh"; sourceTree = "<group>"; };
+		0113AE8AD1247CACB623EF92770665C4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		02574C93474285BF721546A2BF3F254F /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
-		025AE8D377CB2FF8F0CA8DB299C29C91 /* Pods_LeanCloudSwiftDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LeanCloudSwiftDemo.framework; path = "Pods-LeanCloudSwiftDemo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04844B7A96AAF3B98EC404546A5208C1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04E72EB63434913157D274AB9153D724 /* Relation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Relation.swift; path = Sources/Storage/DataType/Relation.swift; sourceTree = "<group>"; };
 		07674B00AD47594C8ADCEF1C3C28BA43 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
 		0B1987363A8EBC4791234037F62D8392 /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
 		0BB489D87FB5A477904BFA8847689A8D /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
-		0C8AFA93A5C8B94622C531E06E7F3060 /* Pods-LeanCloudSwiftDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LeanCloudSwiftDemo-frameworks.sh"; sourceTree = "<group>"; };
 		1A2CC105A2289BEF8A4E4A91114C0A11 /* Operation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operation.swift; path = Sources/Storage/Operation.swift; sourceTree = "<group>"; };
 		2B4595EAEAE7BFE13827B69B6ED76593 /* Polyfill.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Polyfill.h; path = Sources/Foundation/Polyfill/Polyfill.h; sourceTree = "<group>"; };
+		2CE6BFA4405BBAF0984C5E860B8FC44E /* Pods_LeanCloudSwiftDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LeanCloudSwiftDemoTests.framework; path = "Pods-LeanCloudSwiftDemoTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CF3CF2C9C0AB1FDEC5F0DEDE460697A /* AppRouterCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppRouterCache.swift; path = Sources/Storage/AppRouterCache.swift; sourceTree = "<group>"; };
 		30BDD508080314A1D757D2CB79BCF6B8 /* Array.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Array.swift; path = Sources/Storage/DataType/Array.swift; sourceTree = "<group>"; };
 		324F74C7A2656995ED8218C4D38E2525 /* Dictionary.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Dictionary.swift; path = Sources/Storage/DataType/Dictionary.swift; sourceTree = "<group>"; };
@@ -126,7 +144,6 @@
 		3AD6A142968090CD0062E1EC29E5524C /* LeanCloud-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LeanCloud-umbrella.h"; sourceTree = "<group>"; };
 		3DD883BB68F808FF3D72EEB3B4D904F5 /* SMSClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SMSClient.swift; path = Sources/Storage/SMSClient.swift; sourceTree = "<group>"; };
 		3FE7A9AAC45EE17745BA43A4CD5714C3 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
-		4104D4009F3D118C98AA8B256C4F9903 /* LeanCloud.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LeanCloud.framework; path = LeanCloud.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		414724D3FDBAEDEA6E0E86A175762004 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
 		42791F1D2890E72EE5B8A11910D3F7B7 /* ObjectProfiler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ObjectProfiler.swift; path = Sources/Storage/ObjectProfiler.swift; sourceTree = "<group>"; };
 		44EA420B4A2D010D3B650D8CEBA9D073 /* MD5.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MD5.swift; path = Sources/Foundation/MD5.swift; sourceTree = "<group>"; };
@@ -136,35 +153,43 @@
 		4CE481EDC739425A1FCF0E1118473D0D /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
 		520D41BA1C5CC732519982C0A85741AC /* LeanCloud-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LeanCloud-dummy.m"; sourceTree = "<group>"; };
 		53AC2BC9BA066AF7CE168C4B8EDF1887 /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
+		55CA76D238150B634839979A52EAB621 /* Pods-LeanCloudSwiftDemoTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LeanCloudSwiftDemoTests-umbrella.h"; sourceTree = "<group>"; };
 		56D6CE8011E7A6D1506917DD65F5AAD9 /* PersistentController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PersistentController.swift; path = Sources/LocalStorage/PersistentController.swift; sourceTree = "<group>"; };
 		5ACE4DDDC1F392DDBD3877544250FB72 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Sources/Storage/Request.swift; sourceTree = "<group>"; };
 		5E8C77B775906C4970E04AD22FA4E687 /* StorageContext.xcdatamodel */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcdatamodel; path = StorageContext.xcdatamodel; sourceTree = "<group>"; };
+		60B02C10D5F4E349E1C419E88EC731AA /* Pods-LeanCloudSwiftDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LeanCloudSwiftDemo-umbrella.h"; sourceTree = "<group>"; };
 		61BF8C3F763F5BB36EE9E3B7DAF928F1 /* HTTPClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPClient.swift; path = Sources/Storage/HTTPClient.swift; sourceTree = "<group>"; };
 		62F68C22D57CC95A1D12DE83261F7AEB /* FileUploader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FileUploader.swift; path = Sources/Storage/FileUploader.swift; sourceTree = "<group>"; };
+		652437F44285129BCF5492FB366025FD /* Pods-LeanCloudSwiftDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LeanCloudSwiftDemo-resources.sh"; sourceTree = "<group>"; };
 		6531C3BFA7332311300FE322A2DB2166 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Sources/Storage/Response.swift; sourceTree = "<group>"; };
 		6837DD9F70A6BF677CF2EFC79C94A891 /* Value.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Value.swift; path = Sources/Storage/Value.swift; sourceTree = "<group>"; };
 		69FF79115174B8C7A0DBF5BB5034DA8F /* GeoPoint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GeoPoint.swift; path = Sources/Storage/DataType/GeoPoint.swift; sourceTree = "<group>"; };
+		6A04A1F5B852FB8B0BA191898B611B50 /* Pods-LeanCloudSwiftDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LeanCloudSwiftDemo.modulemap"; sourceTree = "<group>"; };
 		6C53F5C4C430E488BC5CE4FC952CFD66 /* LeanCloud.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LeanCloud.swift; path = Sources/Storage/LeanCloud.swift; sourceTree = "<group>"; };
 		6CF60177F153062EF930CBF2DEF9A6F9 /* Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Error.swift; path = Sources/Foundation/Error.swift; sourceTree = "<group>"; };
-		6DAD968970EBE1320339B623B2DF6673 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D5A2651626A4BF31D936EBC832A2239 /* Pods-LeanCloudSwiftDemoTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LeanCloudSwiftDemoTests-resources.sh"; sourceTree = "<group>"; };
 		706C7AFFE37BA158C3553250F4B5FAED /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7090FDF584AF41A9F6B13D3F64DAB070 /* HTTPRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPRouter.swift; path = Sources/Storage/HTTPRouter.swift; sourceTree = "<group>"; };
-		749CE42F73EF549E7348D5C1D4657CF8 /* Pods-LeanCloudSwiftDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LeanCloudSwiftDemo-resources.sh"; sourceTree = "<group>"; };
-		7C7407B88032D48061075FAA99092D84 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EBD1460CD048EFA050CC14901D6FAD5 /* Pods-LeanCloudSwiftDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LeanCloudSwiftDemo-acknowledgements.plist"; sourceTree = "<group>"; };
 		7EDED83A937D952A6278CF593BF6A3E9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		81A92ABF5AF96FC2C77277BCD4AE0D74 /* BatchRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BatchRequest.swift; path = Sources/Storage/BatchRequest.swift; sourceTree = "<group>"; };
 		864F7B42913E76219C58C73E21D5D8ED /* AppRouterCache.xcdatamodel */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcdatamodel; path = AppRouterCache.xcdatamodel; sourceTree = "<group>"; };
+		87C1B4614B328C4A9C0F6A2E61575154 /* Pods-LeanCloudSwiftDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LeanCloudSwiftDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8A5BC533F3F9E67D150DCB8A94F9A504 /* Pods-LeanCloudSwiftDemoTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LeanCloudSwiftDemoTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		8B16834D215B74EDCBB8AA2DBC6A5C41 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
 		8D0949EAD10E5F60190F7694A00FFFB4 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Alamofire.modulemap; sourceTree = "<group>"; };
 		8E4B70C5067EF6C968E40FFE6278C62E /* Data.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Data.swift; path = Sources/Storage/DataType/Data.swift; sourceTree = "<group>"; };
+		8E5A85F78AD36635B021946E9D57AE3C /* Pods-LeanCloudSwiftDemoTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LeanCloudSwiftDemoTests-dummy.m"; sourceTree = "<group>"; };
 		8E98FF92F7AD21DDF3C4DD22AF2D671B /* Query.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Query.swift; path = Sources/Storage/Query.swift; sourceTree = "<group>"; };
 		90B3D68E6A1BE42D317AE7B77D7C3E35 /* Date.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Date.swift; path = Sources/Storage/DataType/Date.swift; sourceTree = "<group>"; };
 		9327C6D2A705021E1FB1C9F1F14DAA4E /* Engine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Engine.swift; path = Sources/Storage/Engine.swift; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9DE7FCDFEF6EF3CE08B6CBA770C327B1 /* Pods-LeanCloudSwiftDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LeanCloudSwiftDemo.modulemap"; sourceTree = "<group>"; };
+		99A5AD3759CD73EB758CAFC0626F0864 /* Pods-LeanCloudSwiftDemoTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LeanCloudSwiftDemoTests.modulemap"; sourceTree = "<group>"; };
+		9D2F80961B177AA83FC5A0E005119CC8 /* Pods-LeanCloudSwiftDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LeanCloudSwiftDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		9F7A83960F6F053A68A2DF7F5F7AC926 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
 		A4C610A184A71604D72182248C956694 /* LeanCloud.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LeanCloud.modulemap; sourceTree = "<group>"; };
 		A74C2E56196BC0B31C14113D6B5CAFE7 /* String.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = String.swift; path = Sources/Storage/DataType/String.swift; sourceTree = "<group>"; };
+		A81FD3FDE04955B3A1FC8CA34CABE0ED /* Pods-LeanCloudSwiftDemoTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LeanCloudSwiftDemoTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		A87CE4ABE391F0E483CFF2D72DDE2FE7 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
 		A95A30744788A333BC30A4340AE458C4 /* Object.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Object.swift; path = Sources/Storage/DataType/Object.swift; sourceTree = "<group>"; };
 		A9980CDA630D66161453F189D7D3520F /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
@@ -172,36 +197,39 @@
 		A9CDD303947FA30244CF6F2FCE1EBA0F /* ACL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ACL.swift; path = Sources/Storage/DataType/ACL.swift; sourceTree = "<group>"; };
 		AED8B667284E4CBAC87F71C63368ACD1 /* CQLClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CQLClient.swift; path = Sources/Storage/CQLClient.swift; sourceTree = "<group>"; };
 		B086F9F1F55ED8748276C91E312AD8C2 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
-		B37447A35804DA893D6827F7E3B12736 /* Pods-LeanCloudSwiftDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LeanCloudSwiftDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		B0D5C927EF0F158959C284DE74CA68E3 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B479E1D6A2AA838AF0F42CB73D013639 /* Installation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Installation.swift; path = Sources/Storage/DataType/Installation.swift; sourceTree = "<group>"; };
 		B544C9364A95EE1A45C8A8798DEB3AB8 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Sources/Storage/Result.swift; sourceTree = "<group>"; };
+		B9355714EC9E75B5D0C71092C624C34A /* Pods-LeanCloudSwiftDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LeanCloudSwiftDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BEC9BDF1607A51D8E2F0FC6E5A03495C /* LocalStorage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocalStorage.swift; path = Sources/LocalStorage/LocalStorage.swift; sourceTree = "<group>"; };
+		C0632EA5474EB61C06AF70924F1C1EA4 /* Pods-LeanCloudSwiftDemoTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LeanCloudSwiftDemoTests-frameworks.sh"; sourceTree = "<group>"; };
 		C15585090C9F7237BEF941013B230663 /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
 		C168184F840ACAD8F3EE30FB48420410 /* ObjectUpdater.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ObjectUpdater.swift; path = Sources/Storage/ObjectUpdater.swift; sourceTree = "<group>"; };
-		C26A86F431112FC9B4B23F2CC143594F /* Pods-LeanCloudSwiftDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LeanCloudSwiftDemo-umbrella.h"; sourceTree = "<group>"; };
 		C31503A740C03BF02F9B3D58FF47547C /* File.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = File.swift; path = Sources/Storage/DataType/File.swift; sourceTree = "<group>"; };
 		CC586D09940C51ED88CDC151940DB014 /* Role.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Role.swift; path = Sources/Storage/DataType/Role.swift; sourceTree = "<group>"; };
 		D85F60F07BDBC18701C0B4D1733DA38E /* Utility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Utility.swift; path = Sources/Storage/Utility.swift; sourceTree = "<group>"; };
 		D9A2C9EDB0AE8730EB6B81E00F641975 /* Null.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Null.swift; path = Sources/Storage/DataType/Null.swift; sourceTree = "<group>"; };
 		DB9F66ED7A250BB1AE2875F8D38C7398 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		DC7C9B58D942469396B3247042C246DA /* Pods-LeanCloudSwiftDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LeanCloudSwiftDemo.release.xcconfig"; sourceTree = "<group>"; };
+		DE0CA36DA0404A22251C0E78AC26A7BD /* Pods-LeanCloudSwiftDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LeanCloudSwiftDemo-dummy.m"; sourceTree = "<group>"; };
 		E0FCD5B9E44D18AB8AF037B5FBA49F37 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
-		E444A37966B088E87218FF33C88758EA /* Pods-LeanCloudSwiftDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LeanCloudSwiftDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		EAD173BE151E418EB18039B5F6D6E7E0 /* Pods-LeanCloudSwiftDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LeanCloudSwiftDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		EB9B549E3E6C09437705814251EAAB08 /* Pods-LeanCloudSwiftDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LeanCloudSwiftDemo.release.xcconfig"; sourceTree = "<group>"; };
 		ED97E9CDF55B43B19C27B012ED5C9BEF /* Logger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Logger.swift; path = Sources/Foundation/Logger.swift; sourceTree = "<group>"; };
+		EE3E96356B8044FBAD07D203BCFFE0CD /* Pods_LeanCloudSwiftDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LeanCloudSwiftDemo.framework; path = "Pods-LeanCloudSwiftDemo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF2B787EDD313E09C91B123BB34DAF9E /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
 		F02D0C6893034A86996532FDA3E746BE /* Bool.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Bool.swift; path = Sources/Storage/DataType/Bool.swift; sourceTree = "<group>"; };
 		F0E366C00F43365CD7DA678E38F693B7 /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
 		F0EDC3B282ED531384A0A1763DA301B1 /* Application.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Application.swift; path = Sources/Foundation/Application.swift; sourceTree = "<group>"; };
+		F28E3F5CBE2F83B1A0DFCA15314B8CE2 /* Pods-LeanCloudSwiftDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LeanCloudSwiftDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		F2F68064128B9BC5B7558ED9614E8E85 /* LeanCloud.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LeanCloud.framework; path = LeanCloud.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F39482AE8ECF1FCA086ED29ACB787175 /* Polyfill.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Polyfill.m; path = Sources/Foundation/Polyfill/Polyfill.m; sourceTree = "<group>"; };
 		F4375977B7A5343D154E582D6870AA64 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
-		F53249E835C25B12AEE2C4D4A1E8C6E9 /* Pods-LeanCloudSwiftDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LeanCloudSwiftDemo-dummy.m"; sourceTree = "<group>"; };
 		F9494D797314A304F5142E689608409C /* Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extension.swift; path = Sources/Storage/Extension.swift; sourceTree = "<group>"; };
 		FA3ECB2D2BF784E9961F50AC31321649 /* Runtime.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Runtime.swift; path = Sources/Storage/Runtime.swift; sourceTree = "<group>"; };
 		FAD67D9BC6E251ECBE2AB7DAE779ACC7 /* Number.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Number.swift; path = Sources/Storage/DataType/Number.swift; sourceTree = "<group>"; };
 		FB0CDE33819B528F58267E5E539C45A4 /* LeanCloud-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LeanCloud-prefix.pch"; sourceTree = "<group>"; };
 		FB8D1D79B2D0E0F14BFFEDEAAE238CBE /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
 		FF2DEB12525D345982A6F835D61F1F7F /* LeanCloud.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LeanCloud.xcconfig; sourceTree = "<group>"; };
+		FFC1ADC83E3AAF1B0F2730E13EDBB11C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,6 +238,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D1E66FE754A575BFFD9E0A4AD2E5ACC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91A02A8E22BAEFC10218E8EFB7CCD7D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				638C9622C9CC6CF18648026ABE61EC6D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,6 +395,15 @@
 			name = LocalStorage;
 			sourceTree = "<group>";
 		};
+		592CC7F2725D8A9CB5F7F95ECB97D4BD /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C311890CEF8E8334C053F1E96257317F /* Pods-LeanCloudSwiftDemo */,
+				5AF5589C9611847DDB53E805313B5315 /* Pods-LeanCloudSwiftDemoTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
 		59B91F212518421F271EBA85D5530651 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -366,6 +411,24 @@
 				D1ADA17A1622F41549DD68F5D85E04FC /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5AF5589C9611847DDB53E805313B5315 /* Pods-LeanCloudSwiftDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				FFC1ADC83E3AAF1B0F2730E13EDBB11C /* Info.plist */,
+				99A5AD3759CD73EB758CAFC0626F0864 /* Pods-LeanCloudSwiftDemoTests.modulemap */,
+				8A5BC533F3F9E67D150DCB8A94F9A504 /* Pods-LeanCloudSwiftDemoTests-acknowledgements.markdown */,
+				A81FD3FDE04955B3A1FC8CA34CABE0ED /* Pods-LeanCloudSwiftDemoTests-acknowledgements.plist */,
+				8E5A85F78AD36635B021946E9D57AE3C /* Pods-LeanCloudSwiftDemoTests-dummy.m */,
+				C0632EA5474EB61C06AF70924F1C1EA4 /* Pods-LeanCloudSwiftDemoTests-frameworks.sh */,
+				6D5A2651626A4BF31D936EBC832A2239 /* Pods-LeanCloudSwiftDemoTests-resources.sh */,
+				55CA76D238150B634839979A52EAB621 /* Pods-LeanCloudSwiftDemoTests-umbrella.h */,
+				B9355714EC9E75B5D0C71092C624C34A /* Pods-LeanCloudSwiftDemoTests.debug.xcconfig */,
+				9D2F80961B177AA83FC5A0E005119CC8 /* Pods-LeanCloudSwiftDemoTests.release.xcconfig */,
+			);
+			name = "Pods-LeanCloudSwiftDemoTests";
+			path = "Target Support Files/Pods-LeanCloudSwiftDemoTests";
 			sourceTree = "<group>";
 		};
 		6EEAADF00AEF17A9D4F06244CEAE4B9B /* Support Files */ = {
@@ -388,32 +451,24 @@
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				59B91F212518421F271EBA85D5530651 /* Frameworks */,
 				2BA55BC04EF66030FB427F10AF18AC86 /* Pods */,
-				FF403C3EED34184D49A764E0BEA9CCC5 /* Products */,
-				8AF3DE5D3C5487469FC4B0A50D655C08 /* Targets Support Files */,
+				FAA961EEA9D667F0C95E58FDB5ADE6DB /* Products */,
+				592CC7F2725D8A9CB5F7F95ECB97D4BD /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		8AF3DE5D3C5487469FC4B0A50D655C08 /* Targets Support Files */ = {
+		C311890CEF8E8334C053F1E96257317F /* Pods-LeanCloudSwiftDemo */ = {
 			isa = PBXGroup;
 			children = (
-				AC04888BBFFBED6B7C5B788E4EEB5156 /* Pods-LeanCloudSwiftDemo */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		AC04888BBFFBED6B7C5B788E4EEB5156 /* Pods-LeanCloudSwiftDemo */ = {
-			isa = PBXGroup;
-			children = (
-				6DAD968970EBE1320339B623B2DF6673 /* Info.plist */,
-				9DE7FCDFEF6EF3CE08B6CBA770C327B1 /* Pods-LeanCloudSwiftDemo.modulemap */,
-				EAD173BE151E418EB18039B5F6D6E7E0 /* Pods-LeanCloudSwiftDemo-acknowledgements.markdown */,
-				B37447A35804DA893D6827F7E3B12736 /* Pods-LeanCloudSwiftDemo-acknowledgements.plist */,
-				F53249E835C25B12AEE2C4D4A1E8C6E9 /* Pods-LeanCloudSwiftDemo-dummy.m */,
-				0C8AFA93A5C8B94622C531E06E7F3060 /* Pods-LeanCloudSwiftDemo-frameworks.sh */,
-				749CE42F73EF549E7348D5C1D4657CF8 /* Pods-LeanCloudSwiftDemo-resources.sh */,
-				C26A86F431112FC9B4B23F2CC143594F /* Pods-LeanCloudSwiftDemo-umbrella.h */,
-				E444A37966B088E87218FF33C88758EA /* Pods-LeanCloudSwiftDemo.debug.xcconfig */,
-				DC7C9B58D942469396B3247042C246DA /* Pods-LeanCloudSwiftDemo.release.xcconfig */,
+				0113AE8AD1247CACB623EF92770665C4 /* Info.plist */,
+				6A04A1F5B852FB8B0BA191898B611B50 /* Pods-LeanCloudSwiftDemo.modulemap */,
+				87C1B4614B328C4A9C0F6A2E61575154 /* Pods-LeanCloudSwiftDemo-acknowledgements.markdown */,
+				7EBD1460CD048EFA050CC14901D6FAD5 /* Pods-LeanCloudSwiftDemo-acknowledgements.plist */,
+				DE0CA36DA0404A22251C0E78AC26A7BD /* Pods-LeanCloudSwiftDemo-dummy.m */,
+				0018B53229F61492D0CC2E5FD2498079 /* Pods-LeanCloudSwiftDemo-frameworks.sh */,
+				652437F44285129BCF5492FB366025FD /* Pods-LeanCloudSwiftDemo-resources.sh */,
+				60B02C10D5F4E349E1C419E88EC731AA /* Pods-LeanCloudSwiftDemo-umbrella.h */,
+				F28E3F5CBE2F83B1A0DFCA15314B8CE2 /* Pods-LeanCloudSwiftDemo.debug.xcconfig */,
+				EB9B549E3E6C09437705814251EAAB08 /* Pods-LeanCloudSwiftDemo.release.xcconfig */,
 			);
 			name = "Pods-LeanCloudSwiftDemo";
 			path = "Target Support Files/Pods-LeanCloudSwiftDemo";
@@ -439,12 +494,13 @@
 			path = LeanCloud;
 			sourceTree = "<group>";
 		};
-		FF403C3EED34184D49A764E0BEA9CCC5 /* Products */ = {
+		FAA961EEA9D667F0C95E58FDB5ADE6DB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7C7407B88032D48061075FAA99092D84 /* Alamofire.framework */,
-				4104D4009F3D118C98AA8B256C4F9903 /* LeanCloud.framework */,
-				025AE8D377CB2FF8F0CA8DB299C29C91 /* Pods_LeanCloudSwiftDemo.framework */,
+				B0D5C927EF0F158959C284DE74CA68E3 /* Alamofire.framework */,
+				F2F68064128B9BC5B7558ED9614E8E85 /* LeanCloud.framework */,
+				EE3E96356B8044FBAD07D203BCFFE0CD /* Pods_LeanCloudSwiftDemo.framework */,
+				2CE6BFA4405BBAF0984C5E860B8FC44E /* Pods_LeanCloudSwiftDemoTests.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -452,6 +508,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		05F76A6DCD7B425F471E461AF6F34D00 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7312BDEB7E8A578BBB5B5249BF107465 /* Pods-LeanCloudSwiftDemoTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		18D762CEF23D4D871926C4105E0BE2AD /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -480,6 +544,26 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		0C2F885392DF88AE44B96A8E170A49F7 /* Pods-LeanCloudSwiftDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87CC36778DAAC1FF8D0E6E1A8A5962E2 /* Build configuration list for PBXNativeTarget "Pods-LeanCloudSwiftDemoTests" */;
+			buildPhases = (
+				05F76A6DCD7B425F471E461AF6F34D00 /* Headers */,
+				15B26066F66100E36BCECE9F9808C6E2 /* Sources */,
+				91A02A8E22BAEFC10218E8EFB7CCD7D9 /* Frameworks */,
+				EBE5F01207D1B298727B44913940AD61 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0E13B4472C7E9C584F209B2AA2A438F3 /* PBXTargetDependency */,
+				236B462F95E3C4CD0622EFC3DCBE78DD /* PBXTargetDependency */,
+			);
+			name = "Pods-LeanCloudSwiftDemoTests";
+			productName = "Pods-LeanCloudSwiftDemoTests";
+			productReference = 2CE6BFA4405BBAF0984C5E860B8FC44E /* Pods_LeanCloudSwiftDemoTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		4368E777484C7FE0DBE427A1BA5B1735 /* LeanCloud */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 58411D91F48207CB2EF198ED0192BFD1 /* Build configuration list for PBXNativeTarget "LeanCloud" */;
@@ -496,7 +580,7 @@
 			);
 			name = LeanCloud;
 			productName = LeanCloud;
-			productReference = 4104D4009F3D118C98AA8B256C4F9903 /* LeanCloud.framework */;
+			productReference = F2F68064128B9BC5B7558ED9614E8E85 /* LeanCloud.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		65D8C8A83A835D49B2A6A6AFC633A909 /* Pods-LeanCloudSwiftDemo */ = {
@@ -516,7 +600,7 @@
 			);
 			name = "Pods-LeanCloudSwiftDemo";
 			productName = "Pods-LeanCloudSwiftDemo";
-			productReference = 025AE8D377CB2FF8F0CA8DB299C29C91 /* Pods_LeanCloudSwiftDemo.framework */;
+			productReference = EE3E96356B8044FBAD07D203BCFFE0CD /* Pods_LeanCloudSwiftDemo.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		E76458C58C9140B6A16D60547E68E80C /* Alamofire */ = {
@@ -534,7 +618,7 @@
 			);
 			name = Alamofire;
 			productName = Alamofire;
-			productReference = 7C7407B88032D48061075FAA99092D84 /* Alamofire.framework */;
+			productReference = B0D5C927EF0F158959C284DE74CA68E3 /* Alamofire.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -554,13 +638,14 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = FF403C3EED34184D49A764E0BEA9CCC5 /* Products */;
+			productRefGroup = FAA961EEA9D667F0C95E58FDB5ADE6DB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				E76458C58C9140B6A16D60547E68E80C /* Alamofire */,
 				4368E777484C7FE0DBE427A1BA5B1735 /* LeanCloud */,
 				65D8C8A83A835D49B2A6A6AFC633A909 /* Pods-LeanCloudSwiftDemo */,
+				0C2F885392DF88AE44B96A8E170A49F7 /* Pods-LeanCloudSwiftDemoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -587,9 +672,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EBE5F01207D1B298727B44913940AD61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		15B26066F66100E36BCECE9F9808C6E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4C3C5FEACC0DA9AB5C55615163DA124 /* Pods-LeanCloudSwiftDemoTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		580CECD985AF283E18C773AB10E70A5A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -681,6 +781,18 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		0E13B4472C7E9C584F209B2AA2A438F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = E76458C58C9140B6A16D60547E68E80C /* Alamofire */;
+			targetProxy = 252D57EBF294F6453784007FCAEDFF28 /* PBXContainerItemProxy */;
+		};
+		236B462F95E3C4CD0622EFC3DCBE78DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LeanCloud;
+			target = 4368E777484C7FE0DBE427A1BA5B1735 /* LeanCloud */;
+			targetProxy = 1BF26AC552F5CFCFF95F2773E63C21D3 /* PBXContainerItemProxy */;
+		};
 		3461C451F8EFB666E2AC000FD221317F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Alamofire;
@@ -768,6 +880,44 @@
 			};
 			name = Debug;
 		};
+		1B23B8D8B9A466CDD9F96DE398B389C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9355714EC9E75B5D0C71092C624C34A /* Pods-LeanCloudSwiftDemoTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LeanCloudSwiftDemoTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LeanCloudSwiftDemoTests/Pods-LeanCloudSwiftDemoTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		1EAFDB7DE59A16060DF36FC40DC2E750 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C15585090C9F7237BEF941013B230663 /* Alamofire.xcconfig */;
@@ -806,7 +956,7 @@
 		};
 		3F8037636DAD92F1B044D7073351AE0A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DC7C9B58D942469396B3247042C246DA /* Pods-LeanCloudSwiftDemo.release.xcconfig */;
+			baseConfigurationReference = EB9B549E3E6C09437705814251EAAB08 /* Pods-LeanCloudSwiftDemo.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -980,7 +1130,7 @@
 		};
 		C1DF54382F599510A6D8712A6DDA5644 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E444A37966B088E87218FF33C88758EA /* Pods-LeanCloudSwiftDemo.debug.xcconfig */;
+			baseConfigurationReference = F28E3F5CBE2F83B1A0DFCA15314B8CE2 /* Pods-LeanCloudSwiftDemo.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1015,6 +1165,45 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		F82BA741AC2D9CB034B64ED1B411541B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D2F80961B177AA83FC5A0E005119CC8 /* Pods-LeanCloudSwiftDemoTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LeanCloudSwiftDemoTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LeanCloudSwiftDemoTests/Pods-LeanCloudSwiftDemoTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		F9711F223F590669E94B504F3CC44301 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1086,6 +1275,15 @@
 			buildConfigurations = (
 				590E9473D0B5D9C712FC0B9186B6F43E /* Debug */,
 				586ACCE03A7E93CC7C6AE9E0971B427E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87CC36778DAAC1FF8D0E6E1A8A5962E2 /* Build configuration list for PBXNativeTarget "Pods-LeanCloudSwiftDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B23B8D8B9A466CDD9F96DE398B389C6 /* Debug */,
+				F82BA741AC2D9CB034B64ED1B411541B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

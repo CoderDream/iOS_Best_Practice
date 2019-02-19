@@ -4,3 +4,7 @@ use_frameworks!
 target 'LeanCloudSwiftDemo' do
    pod 'LeanCloud'
 end
+
+target 'LeanCloudSwiftDemoTests' do
+   pod 'LeanCloud'
+end
