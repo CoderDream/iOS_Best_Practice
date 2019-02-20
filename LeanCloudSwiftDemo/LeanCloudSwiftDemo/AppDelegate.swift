@@ -21,8 +21,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             key: "UPd3qOCfYcXB9pfr65KAXCSa" /* Your app key */
         )
         
-        mothod0901()
-        
+        // mothod0901()
+        //testSetArray()
+        // mothod1001_deleteObject()
+        mothod1101_deleteObject()
         return true
     }
     
@@ -232,7 +234,99 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             print("ERROR")
         }
     }
+    
+//    删除对象
+//    假如某一个 Todo 完成了，用户想要删除这个 Todo 对象，可以如下操作：
+    private func mothod1001_deleteObject() {
+        let todo = LCObject(className: "Todo", objectId: "155c6aad6f19a27c001aa6b065")
+        
+        // 调用实例方法删除对象
+        _ = todo.delete { result in
+            switch result {
+            case .success:
+                print("Todo Object delete success")
+                break // 删除成功
+            case .failure(let error):
+                print(error)
+            }
+        }
+    }
+    
+//    更新数组
+//    更新数组也是原子操作。使用以下方法可以方便地维护数组类型的数据：
+//    append(String, element: LCType)
+//    将指定对象附加到数组末尾。
+//    append(String, element: LCType, unique: Bool)
+//    将指定对象附加到数组末尾，并且可以设置一个 unique 的 bool 值表示只是确保唯一，不会重复添加
+//    append(String, elements: [LCType])
+//    将指定对象数组附加到数组末尾。
+//    append(String, elements: [LCType], unique: Bool)
+//    将指定对象附加到数组末尾，并且可以设置一个 unique 的 bool 值表示只是确保唯一，不会重复添加
+//    remove(String, element: LCType)
+//    从数组字段中删除指定的对象。
+//    remove(String, elements: [LCType])
+//    从数组字段中删除指定的对象数组。
+//    例如，Todo 对象有一个提醒时间 reminders 字段，是一个数组，代表这个日程会在哪些时间点提醒用户。比如有个拖延症患者把闹钟设为早上的 7:10、7:20、7:30：
+    func dateWithString(string: String) -> LCDate {
+        let dateFormatter = DateFormatter()
+        
+        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        dateFormatter.locale = Locale.init(identifier: "en_US_POSIX")
+        
+        let date = LCDate(dateFormatter.date(from: string)!)
+        
+        return date
+    }
+    
+    private func testSetArray() {
+        do {
+            let todo = LCObject(className: "Todo")
+            
+            let reminder1 = dateWithString(string: "2015-11-11 07:10:00")
+            let reminder2 = dateWithString(string: "2015-11-11 07:20:00")
+            let reminder3 = dateWithString(string: "2015-11-11 07:30:00")
+            
+            try todo.set("reminders", value: [reminder1, reminder2, reminder3])
+            
+            // 同步地保存，为了示例的简洁，故意忽略了错误检查
+            _ = todo.save()
+            
+            // 新增一个闹钟时间
+            let reminder4 = dateWithString(string: "2015-11-11 07:40:00")
+            
+            // 使用 append 方法添加
+            try todo.append("reminders", element: reminder4, unique: true)
+            
+            _ = todo.save { result in
+                switch result {
+                case .success:
+                    print("reminders append success")
+                    break // 更新成功
+                case .failure(let error):
+                    print(error)
+                }
+            }
+        } catch {
+            print("ERROR")
+        }
+    }
+    
+//    使用 CQL 语法删除对象
+//    LeanStorage 提供了类似 SQL 语法中的 Delete 方式删除一个对象，例如删除一个 Todo 对象可以使用下面的代码：
+    private func mothod1101_deleteObject() {
+        // 执行 CQL 语句实现删除一个 Todo 对象
+        _ = LCCQLClient.execute("delete from Todo where objectId='155c6aad6f19a27c001aa6b065'") { result in
+            switch result {
+            case .success:
+                print("Todo Object delete success")
+                break // 删除成功
+            case .failure(let error):
+                print(error)
+            }
+        }
+    }
 
+    //
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
