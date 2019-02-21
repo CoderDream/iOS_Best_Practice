@@ -20,6 +20,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             id:  "VOfCGionrepsdh1dly5lPlfX-9Nh9j0Va", /* Your app ID */
             key: "UPd3qOCfYcXB9pfr65KAXCSa" /* Your app key */
         )
+        // 放在 SDK 初始化语句 LCApplication.default.set 后面，只需要调用一次即可
+        LCApplication.default.logLevel = .debug
         
         // mothod0901()
         //testSetArray()
