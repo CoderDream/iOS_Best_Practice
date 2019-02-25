@@ -158,7 +158,9 @@ extension ViewController {
           //completion(nil, nil)
           
           self.downloadTags(contentID: firstFileID) { tags in
-            completion(tags, nil)
+            self.downloadColors(contentID: firstFileID) { colors in              
+              completion(tags, colors)
+            }
           }
         }
         
@@ -188,6 +190,32 @@ extension ViewController {
       
       // 4
       completion(tags)
+    }
+  }
+  
+  func downloadColors(contentID: String, completion: @escaping([PhotoColor]?) -> Void) {
+    // 1
+    Alamofire.request("http://api.imagga.com/v1/colors", parameters: ["content" : contentID], headers: ["Authorization" : "Basic YWNjXzBhMGNmNzFiZmIzYmY4Njo5MTJjNjdmZjM2N2EyYTA5ZTI2Zjg5OTc4Y2FiYmQ5YQ=="])
+      
+      // 2
+      .responseJSON { response in
+        guard response.result.isSuccess, let value = response.result.value else {
+          print("Error while fetching colors: \(String(describing: response.result.error))")
+          completion(nil)
+          return
+        }
+        
+        // 3
+        //print(value)
+        let photoColors = JSON(value)["results"][0]["info"]["image_colors"].array?.map { json in
+          PhotoColor(red: json["r"].intValue,
+                     green: json["g"].intValue,
+                     blue: json["b"].intValue,
+                     colorName: json["closest_palette_color"].stringValue)
+        }
+        
+        // 4
+        completion(photoColors)
     }
   }
 }
