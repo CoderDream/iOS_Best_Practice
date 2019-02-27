@@ -13,7 +13,7 @@
 ### [Swift基础之使用Alamofire库进行网络请求和断点下载](https://blog.csdn.net/hbblzjy/article/details/53392135)
 
 - 模拟器：  
-![](Snapshot\02_iPhone5s.png)
+![](Snapshot/02_iPhone5s.png)
 
 - 控制台输出：
 ```
