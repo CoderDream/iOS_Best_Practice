@@ -21,6 +21,8 @@ class ViewController: UIViewController {
     var cancelledData: Data?;
     //下载请求对象
     var downloadRequest: DownloadRequest!;
+    // 图片
+    //var imageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -71,8 +73,8 @@ class ViewController: UIViewController {
     //MARK:-------------- 下载数据请求http
     func httpRequest() {
         let url1 = "http://aggie-horticulture.tamu.edu/wildseed/flowers/AlamoFire.jpg"
-        let url2 = "https://pm.myapp.com/invc/xfspeed/qqpcmgr/download/QQPCDownload1600.exe"
-        let url3 = "http://dldir1.qq.com/qqfile/qq/QQ7.9/16621/QQ7.9.exe"
+        //let url2 = "https://pm.myapp.com/invc/xfspeed/qqpcmgr/download/QQPCDownload1600.exe"
+        //let url3 = "http://dldir1.qq.com/qqfile/qq/QQ7.9/16621/QQ7.9.exe"
         
         if let cancelledData = self.cancelledData {
             self.downloadRequest = Alamofire.download(resumingWith: cancelledData,to: self.destinationPath);
@@ -84,7 +86,20 @@ class ViewController: UIViewController {
         //下载进度
         self.downloadRequest.downloadProgress(queue: DispatchQueue.main,closure: downloadProgress);
         //下载数据响应
-        self.downloadRequest.responseData(completionHandler: downloadResponse);
+        self.downloadRequest.responseData(completionHandler: downloadResponse)
+        self.downloadRequest.responseData { response in // 这里一定要取 responseData，否则报错
+            if let data = response.result.value {
+                let image = UIImage(data: data)
+                let imageView = UIImageView.init(frame: CGRect.init(x: 50, y: 350, width: 300, height: 150));
+                imageView.image = image
+                imageView.layer.borderWidth = 5
+                imageView.layer.borderColor = UIColor.red.cgColor
+                self.view.addSubview(imageView)
+                print("set image success")
+            }
+            let message = "下载图片结果：\(response.result)"
+            print(message)
+        }
     }
     //MARK:------------下载过程中改变进度条
     func downloadProgress(progress: Progress) {
