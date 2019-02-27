@@ -23,14 +23,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // 放在 SDK 初始化语句 LCApplication.default.set 后面，只需要调用一次即可
         LCApplication.default.logLevel = .debug
         
-        // mothod0901()
+        //  method0901()
         //testSetArray()
-        // mothod1001_deleteObject()
-        mothod1101_deleteObject()
+        method1001_deleteObject()
+        // method1101_deleteObject()
+        
+//        uploadFileWithImage()
+       // saveObjectWithImageFile()
         return true
     }
     
-    private func mothod0101() {
+    private func  method0101() {
         do {
             let post = LCObject(className: "Post")
             try post.set("words", value: "Hello World!")
@@ -50,7 +53,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
     
-    private func mothod0201() {
+    private func  method0201() {
         do {
             // 2.
             let todo = LCObject(className: "Todo")
@@ -75,7 +78,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
     
-    private func mothod0301() {
+    private func  method0301() {
         // 3.             使用 CQL 语法保存对象
         // LeanStorage 提供了类似 SQL 语法中的 Insert 方式保存一个对象，例如保存一个 TodoFolder 对象可以使用下面的代码：
         // 执行 CQL 语句实现新增一个 TodoFolder 对象
@@ -93,7 +96,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
     
-    private func mothod0401() {
+    private func  method0401() {
         // 4 获取对象
         // 每个被成功保存在云端的对象会有一个唯一的 Id 标识 objectId，因此获取对象的最基本的方法就是根据 objectId 来查询：
         
@@ -126,7 +129,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
     
-    private func mothod0501() {
+    private func  method0501() {
         do {
             // 5. 获取 objectId
             // 每一次对象存储成功之后，云端都会返回 objectId，它是一个全局唯一的属性。
@@ -151,7 +154,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
     
-    private func mothod0601() {
+    private func  method0601() {
         // 6 访问对象的属性
         //访问 Todo 的属性的方式为：
         let query2 = LCQuery(className: "Todo")
@@ -178,7 +181,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
     
-    private func mothod0701() {
+    private func  method0701() {
         do {
             let todo3 = LCObject(className: "Todo", objectId: "5c6aa7df19a27c001aa6afcb")
             try todo3.set("content", value: "wednesday,15:30")
@@ -199,9 +202,121 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
     
+    private func uploadFileWithImage() {
+        if let url = Bundle.main.url(forResource: "chapter02009", withExtension: "png") {
+            let file = LCFile(payload: .fileURL(fileURL: url))
+            
+            _ = file.save { result in
+                switch result {
+                case .success:
+                    // handle success
+                    print("LCFile upload success")
+                    break
+                case .failure(error: let error):
+                    // handle error
+                    print(error)
+                    break
+                }
+            }
+        }
+    }
+    
+    private func saveObjectWithImageFile() {
+//        if let url = Bundle.main.url(forResource: "chapter02009", withExtension: "png") {
+//            let file = LCFile(payload: .fileURL(fileURL: url))
+//
+//            _ = file.save { result in
+//                switch result {
+//                case .success:
+//                    // handle success
+//                    print("LCFile upload success")
+//
+//                    break
+//                case .failure(error: let error):
+//                    // handle error
+//                    print(error)
+//                    break
+//                }
+//            }
+            let path = Bundle.main.path(forResource: "chapter02009", ofType: "png")
+            let image = UIImage(contentsOfFile: path!)
+            // 获取图片的Data数据
+            let avatarImageData = UIImage.jpegData(image!)(compressionQuality: 0.5)!
+            // 创建图片的LCFilew对象
+            let avatarFile = LCFile(payload: .data(data: avatarImageData))
+            // 设置图片名称，在平台数据库中会显示该名称
+            avatarFile.name = "avatar.jpg"
+            let todo3 = LCObject(className: "ImageObject", objectId: "5c6aa7df19a27c001aa6afcb")
+            do {
+                try todo3.set("avatarFile", value: avatarFile)
+                let _ = todo3.save { (result2) in
+                    switch result2 {
+                    case .success:
+                        // handle success
+                        print("content update success")
+                        break
+                    case .failure(error: let error):
+                        // handle error
+                        print(error)
+                        break
+                    }
+                }
+            } catch {
+              print("ERROR")
+            }
+
+       // }
+        
+    }
+    
+//    private func saveObjectWithImage() {
+//        // do {
+//        let path = Bundle.main.path(forResource: "chapter02009", ofType: "png")
+//        let image = UIImage(contentsOfFile: path!)
+//        // 获取图片的Data数据
+//        let avatarImageData = UIImage.jpegData(image!)(compressionQuality: 0.5)!
+//        // 创建图片的LCFilew对象
+//        let avatarFile = LCFile(payload: .data(data: avatarImageData))
+//        // 设置图片名称，在平台数据库中会显示该名称
+//        avatarFile.name = "avatar.jpg"
+//        // Invalid conversion from throwing function of type '(_) throws -> ()' to non-throwing function type '(LCBooleanResult) -> Void'
+//        // 保存图片到平台
+//        let _ = avatarFile.save { result in
+//            switch result {
+//            case .success:
+//                //                    user.avatarFile = avatarFile
+//                //                    print("result: \(user)")
+//
+//                let todo3 = LCObject(className: "ImageObject", objectId: "5c6aa7df19a27c001aa6afcb")
+//                try todo3.set("avatarFile", value: avatarFile)
+//                let _ = todo3.save { (result2) in
+//                    switch result2 {
+//                    case .success:
+//                        // handle success
+//                        print("content update success")
+//                        break
+//                    case .failure(error: let error):
+//                        // handle error
+//                        print(error)
+//                        break
+//                    }
+//                }
+//                print("result: \(result)")
+//
+//            case .failure(let error):
+//                print(error.localizedDescription)
+//            }
+//        }
+//
+//
+//        //} catch {
+//        //      print("ERROR")
+//        // }
+//    }
+    
     // 使用 CQL 语法更新对象
     // LeanStorage 提供了类似 SQL 语法中的 Update 方式更新一个对象，例如更新一个 TodoFolder 对象可以使用下面的代码：
-    private func mothod0801() {
+    private func  method0801() {
         _ = LCCQLClient.execute("update TodoFolder set name='家庭' where objectId='5c6aa56819a27c001aa6af8f'") { result in
             switch result {
             case .success:
@@ -219,7 +334,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // 如果在每个客户端都直接把它们读到的计数值增加之后再写回去，那么极容易引发冲突和覆盖，导致最终结果不准。
     // 此时就需要使用这类原子操作来实现计数器。
     // 假如，现在增加一个记录查看 Todo 次数的功能，一些与他人共享的 Todo 如果不用原子操作的接口，很有可能会造成统计数据不准确，可以使用如下代码实现这个需求：
-    private func mothod0901() {
+    private func  method0901() {
         do {
             let todo = LCObject(className: "Todo", objectId: "5c6a2c4d19a27c001aa686d4")
             
@@ -242,7 +357,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
 //    删除对象
 //    假如某一个 Todo 完成了，用户想要删除这个 Todo 对象，可以如下操作：
-    private func mothod1001_deleteObject() {
+    private func  method1001_deleteObject() {
         let todo = LCObject(className: "Todo", objectId: "155c6aad6f19a27c001aa6b065")
         
         // 调用实例方法删除对象
@@ -318,9 +433,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
 //    使用 CQL 语法删除对象
 //    LeanStorage 提供了类似 SQL 语法中的 Delete 方式删除一个对象，例如删除一个 Todo 对象可以使用下面的代码：
-    private func mothod1101_deleteObject() {
+    private func  method1101_deleteObject() {
         // 执行 CQL 语句实现删除一个 Todo 对象
-        _ = LCCQLClient.execute("delete from Todo where objectId='155c6aad6f19a27c001aa6b065'") { result in
+        _ = LCCQLClient.execute("delete from Todo where objectId='5c6aa56819a27c001aa6af8c'") { result in
             switch result {
             case .success:
                 print("Todo Object delete success")

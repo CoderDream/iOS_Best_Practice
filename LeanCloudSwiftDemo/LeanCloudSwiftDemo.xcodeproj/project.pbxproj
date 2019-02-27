@@ -10,6 +10,8 @@
 		3F6037D2221B930800D8F67F /* LeanCloudSwiftDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6037D1221B930800D8F67F /* LeanCloudSwiftDemoTests.swift */; };
 		3F6037DA221BB14D00D8F67F /* BaseTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6037D9221BB14C00D8F67F /* BaseTestCase.swift */; };
 		3F6037DE221BE2C800D8F67F /* ObjectTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6037DD221BE2C800D8F67F /* ObjectTestCase.swift */; };
+		3F6038F0222666F600D8F67F /* chapter02009.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F6038EF222666F600D8F67F /* chapter02009.png */; };
+		3F6038F1222666F700D8F67F /* chapter02009.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F6038EF222666F600D8F67F /* chapter02009.png */; };
 		3F7A1A7F22190CEC00EE06E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7A1A7E22190CEC00EE06E6 /* AppDelegate.swift */; };
 		3F7A1A8122190CEC00EE06E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7A1A8022190CEC00EE06E6 /* ViewController.swift */; };
 		3F7A1A8422190CEC00EE06E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F7A1A8222190CEC00EE06E6 /* Main.storyboard */; };
@@ -36,6 +38,7 @@
 		3F6037D3221B930800D8F67F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F6037D9221BB14C00D8F67F /* BaseTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTestCase.swift; sourceTree = "<group>"; };
 		3F6037DD221BE2C800D8F67F /* ObjectTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectTestCase.swift; sourceTree = "<group>"; };
+		3F6038EF222666F600D8F67F /* chapter02009.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chapter02009.png; sourceTree = "<group>"; };
 		3F7A1A7B22190CEC00EE06E6 /* LeanCloudSwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeanCloudSwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F7A1A7E22190CEC00EE06E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F7A1A8022190CEC00EE06E6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -110,6 +113,7 @@
 				3F7A1A8522190CFD00EE06E6 /* Assets.xcassets */,
 				3F7A1A8722190CFD00EE06E6 /* LaunchScreen.storyboard */,
 				3F7A1A8A22190CFD00EE06E6 /* Info.plist */,
+				3F6038EF222666F600D8F67F /* chapter02009.png */,
 			);
 			path = LeanCloudSwiftDemo;
 			sourceTree = "<group>";
@@ -219,6 +223,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F6038F1222666F700D8F67F /* chapter02009.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,6 +232,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F7A1A8922190CFD00EE06E6 /* LaunchScreen.storyboard in Resources */,
+				3F6038F0222666F600D8F67F /* chapter02009.png in Resources */,
 				3F7A1A8622190CFD00EE06E6 /* Assets.xcassets in Resources */,
 				3F7A1A8422190CEC00EE06E6 /* Main.storyboard in Resources */,
 			);
