@@ -36,3 +36,6 @@
 file:///var/mobile/Containers/Data/Application/85E245BA-3ABB-4362-A379-269C3023293C/Documents/AlamoFire.jpg
 文件下载完毕: SUCCESS: 380240 bytes
 ```
+
+## Notification
+### [Swift - UserNotifications框架使用详解2（发送本地通知）](http://www.hangge.com/blog/cache/detail_1851.html)
