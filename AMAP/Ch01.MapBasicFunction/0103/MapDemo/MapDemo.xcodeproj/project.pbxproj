@@ -13,8 +13,6 @@
 		3F3304A1223167B7009E3285 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F3304A0223167B7009E3285 /* Assets.xcassets */; };
 		3F3304A4223167B8009E3285 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F3304A2223167B8009E3285 /* LaunchScreen.storyboard */; };
 		3F3304AD2232C7DC009E3285 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3F3304AC2232C7DC009E3285 /* README.md */; };
-		3F5392F822394EA50006FEAB /* ShowViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F5392F722394EA50006FEAB /* ShowViewController.xib */; };
-		3F5392FA22394EB90006FEAB /* ShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5392F922394EB90006FEAB /* ShowViewController.swift */; };
 		5E3FC00DF32C5C8FE745B8FE /* Pods_MapDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B6870514269D3F7201F3379 /* Pods_MapDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,8 +28,6 @@
 		3F3304A5223167B8009E3285 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F3304AB2232AD55009E3285 /* officialDemoSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "officialDemoSwift-Bridging-Header.h"; sourceTree = "<group>"; };
 		3F3304AC2232C7DC009E3285 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		3F5392F722394EA50006FEAB /* ShowViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShowViewController.xib; sourceTree = "<group>"; };
-		3F5392F922394EB90006FEAB /* ShowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowViewController.swift; sourceTree = "<group>"; };
 		9B6870514269D3F7201F3379 /* Pods_MapDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MapDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -76,8 +72,6 @@
 				3F3304A2223167B8009E3285 /* LaunchScreen.storyboard */,
 				3F3304A5223167B8009E3285 /* Info.plist */,
 				3F3304AB2232AD55009E3285 /* officialDemoSwift-Bridging-Header.h */,
-				3F5392F722394EA50006FEAB /* ShowViewController.xib */,
-				3F5392F922394EB90006FEAB /* ShowViewController.swift */,
 			);
 			path = MapDemo;
 			sourceTree = "<group>";
@@ -127,11 +121,6 @@
 		3F33048E223167B0009E3285 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				KnownAssetTags = (
-					1,
-					2,
-					3,
-				);
 				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = CoderDream;
@@ -165,7 +154,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F3304A4223167B8009E3285 /* LaunchScreen.storyboard in Resources */,
-				3F5392F822394EA50006FEAB /* ShowViewController.xib in Resources */,
 				3F3304A1223167B7009E3285 /* Assets.xcassets in Resources */,
 				3F3304AD2232C7DC009E3285 /* README.md in Resources */,
 				3F33049F223167B1009E3285 /* Main.storyboard in Resources */,
@@ -228,7 +216,6 @@
 			files = (
 				3F33049C223167B1009E3285 /* ViewController.swift in Sources */,
 				3F33049A223167B1009E3285 /* AppDelegate.swift in Sources */,
-				3F5392FA22394EB90006FEAB /* ShowViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
