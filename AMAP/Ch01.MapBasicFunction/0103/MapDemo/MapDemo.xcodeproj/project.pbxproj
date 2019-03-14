@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F027BB3223A4B5F00AAF2AE /* PoiDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F027BA2223A4B5F00AAF2AE /* PoiDetailViewController.m */; };
+		3F027BB4223A4B5F00AAF2AE /* AnnotationClusterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F027BA4223A4B5F00AAF2AE /* AnnotationClusterViewController.m */; };
+		3F027BB5223A4B5F00AAF2AE /* ClusterAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F027BA6223A4B5F00AAF2AE /* ClusterAnnotation.m */; };
+		3F027BB6223A4B5F00AAF2AE /* CoordinateQuadTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F027BA7223A4B5F00AAF2AE /* CoordinateQuadTree.m */; };
+		3F027BB7223A4B5F00AAF2AE /* QuadTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F027BA8223A4B5F00AAF2AE /* QuadTree.m */; };
+		3F027BB8223A4B5F00AAF2AE /* ClusterAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F027BAF223A4B5F00AAF2AE /* ClusterAnnotationView.m */; };
+		3F027BB9223A4B5F00AAF2AE /* ClusterTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F027BB0223A4B5F00AAF2AE /* ClusterTableViewCell.m */; };
+		3F027BBA223A4B5F00AAF2AE /* CustomCalloutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F027BB1223A4B5F00AAF2AE /* CustomCalloutView.m */; };
 		3F33049A223167B1009E3285 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F330499223167B1009E3285 /* AppDelegate.swift */; };
 		3F33049C223167B1009E3285 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F33049B223167B1009E3285 /* ViewController.swift */; };
 		3F33049F223167B1009E3285 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F33049D223167B1009E3285 /* Main.storyboard */; };
@@ -19,6 +27,22 @@
 /* Begin PBXFileReference section */
 		2319E68EF187B5858F18C108 /* Pods-MapDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapDemo.release.xcconfig"; path = "Target Support Files/Pods-MapDemo/Pods-MapDemo.release.xcconfig"; sourceTree = "<group>"; };
 		23BC1C4FA10D373B0FBBC997 /* Pods-MapDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapDemo.debug.xcconfig"; path = "Target Support Files/Pods-MapDemo/Pods-MapDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		3F027BA1223A4B5F00AAF2AE /* AnnotationClusterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnnotationClusterViewController.h; sourceTree = "<group>"; };
+		3F027BA2223A4B5F00AAF2AE /* PoiDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoiDetailViewController.m; sourceTree = "<group>"; };
+		3F027BA3223A4B5F00AAF2AE /* PoiDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoiDetailViewController.h; sourceTree = "<group>"; };
+		3F027BA4223A4B5F00AAF2AE /* AnnotationClusterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnnotationClusterViewController.m; sourceTree = "<group>"; };
+		3F027BA6223A4B5F00AAF2AE /* ClusterAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClusterAnnotation.m; sourceTree = "<group>"; };
+		3F027BA7223A4B5F00AAF2AE /* CoordinateQuadTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoordinateQuadTree.m; sourceTree = "<group>"; };
+		3F027BA8223A4B5F00AAF2AE /* QuadTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuadTree.m; sourceTree = "<group>"; };
+		3F027BA9223A4B5F00AAF2AE /* ClusterAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClusterAnnotation.h; sourceTree = "<group>"; };
+		3F027BAA223A4B5F00AAF2AE /* CoordinateQuadTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoordinateQuadTree.h; sourceTree = "<group>"; };
+		3F027BAB223A4B5F00AAF2AE /* QuadTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuadTree.h; sourceTree = "<group>"; };
+		3F027BAD223A4B5F00AAF2AE /* ClusterTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClusterTableViewCell.h; sourceTree = "<group>"; };
+		3F027BAE223A4B5F00AAF2AE /* CustomCalloutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCalloutView.h; sourceTree = "<group>"; };
+		3F027BAF223A4B5F00AAF2AE /* ClusterAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClusterAnnotationView.m; sourceTree = "<group>"; };
+		3F027BB0223A4B5F00AAF2AE /* ClusterTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClusterTableViewCell.m; sourceTree = "<group>"; };
+		3F027BB1223A4B5F00AAF2AE /* CustomCalloutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCalloutView.m; sourceTree = "<group>"; };
+		3F027BB2223A4B5F00AAF2AE /* ClusterAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClusterAnnotationView.h; sourceTree = "<group>"; };
 		3F330496223167B0009E3285 /* MapDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F330499223167B1009E3285 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F33049B223167B1009E3285 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -28,6 +52,7 @@
 		3F3304A5223167B8009E3285 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F3304AB2232AD55009E3285 /* officialDemoSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "officialDemoSwift-Bridging-Header.h"; sourceTree = "<group>"; };
 		3F3304AC2232C7DC009E3285 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		3F95A32C2238A03A0090A5FC /* MapDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MapDemo.entitlements; sourceTree = "<group>"; };
 		9B6870514269D3F7201F3379 /* Pods_MapDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MapDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -43,9 +68,65 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F027B9E223A4B5F00AAF2AE /* ClusterAnnotation */ = {
+			isa = PBXGroup;
+			children = (
+				3F027B9F223A4B5F00AAF2AE /* Demo */,
+				3F027BA5223A4B5F00AAF2AE /* Model */,
+				3F027BAC223A4B5F00AAF2AE /* View */,
+			);
+			path = ClusterAnnotation;
+			sourceTree = "<group>";
+		};
+		3F027B9F223A4B5F00AAF2AE /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				3F027BA0223A4B5F00AAF2AE /* Controller */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		3F027BA0223A4B5F00AAF2AE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3F027BA1223A4B5F00AAF2AE /* AnnotationClusterViewController.h */,
+				3F027BA2223A4B5F00AAF2AE /* PoiDetailViewController.m */,
+				3F027BA3223A4B5F00AAF2AE /* PoiDetailViewController.h */,
+				3F027BA4223A4B5F00AAF2AE /* AnnotationClusterViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3F027BA5223A4B5F00AAF2AE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3F027BA6223A4B5F00AAF2AE /* ClusterAnnotation.m */,
+				3F027BA7223A4B5F00AAF2AE /* CoordinateQuadTree.m */,
+				3F027BA8223A4B5F00AAF2AE /* QuadTree.m */,
+				3F027BA9223A4B5F00AAF2AE /* ClusterAnnotation.h */,
+				3F027BAA223A4B5F00AAF2AE /* CoordinateQuadTree.h */,
+				3F027BAB223A4B5F00AAF2AE /* QuadTree.h */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3F027BAC223A4B5F00AAF2AE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3F027BAD223A4B5F00AAF2AE /* ClusterTableViewCell.h */,
+				3F027BAE223A4B5F00AAF2AE /* CustomCalloutView.h */,
+				3F027BAF223A4B5F00AAF2AE /* ClusterAnnotationView.m */,
+				3F027BB0223A4B5F00AAF2AE /* ClusterTableViewCell.m */,
+				3F027BB1223A4B5F00AAF2AE /* CustomCalloutView.m */,
+				3F027BB2223A4B5F00AAF2AE /* ClusterAnnotationView.h */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		3F33048D223167B0009E3285 = {
 			isa = PBXGroup;
 			children = (
+				3F027B9E223A4B5F00AAF2AE /* ClusterAnnotation */,
 				3F3304AC2232C7DC009E3285 /* README.md */,
 				3F330498223167B0009E3285 /* MapDemo */,
 				3F330497223167B0009E3285 /* Products */,
@@ -65,6 +146,7 @@
 		3F330498223167B0009E3285 /* MapDemo */ = {
 			isa = PBXGroup;
 			children = (
+				3F95A32C2238A03A0090A5FC /* MapDemo.entitlements */,
 				3F330499223167B1009E3285 /* AppDelegate.swift */,
 				3F33049B223167B1009E3285 /* ViewController.swift */,
 				3F33049D223167B1009E3285 /* Main.storyboard */,
@@ -127,6 +209,14 @@
 				TargetAttributes = {
 					3F330495223167B0009E3285 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.Keychain = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -214,8 +304,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F027BB7223A4B5F00AAF2AE /* QuadTree.m in Sources */,
+				3F027BB5223A4B5F00AAF2AE /* ClusterAnnotation.m in Sources */,
+				3F027BB8223A4B5F00AAF2AE /* ClusterAnnotationView.m in Sources */,
+				3F027BB4223A4B5F00AAF2AE /* AnnotationClusterViewController.m in Sources */,
 				3F33049C223167B1009E3285 /* ViewController.swift in Sources */,
+				3F027BB3223A4B5F00AAF2AE /* PoiDetailViewController.m in Sources */,
+				3F027BBA223A4B5F00AAF2AE /* CustomCalloutView.m in Sources */,
+				3F027BB6223A4B5F00AAF2AE /* CoordinateQuadTree.m in Sources */,
 				3F33049A223167B1009E3285 /* AppDelegate.swift in Sources */,
+				3F027BB9223A4B5F00AAF2AE /* ClusterTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,6 +460,8 @@
 			baseConfigurationReference = 23BC1C4FA10D373B0FBBC997 /* Pods-MapDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MapDemo/MapDemo.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 84YDQ32Q44;
 				INFOPLIST_FILE = MapDemo/Info.plist;
@@ -371,6 +471,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.coderdream.myfootprint;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "./MapDemo/officialDemoSwift-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -382,6 +483,8 @@
 			baseConfigurationReference = 2319E68EF187B5858F18C108 /* Pods-MapDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MapDemo/MapDemo.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 84YDQ32Q44;
 				INFOPLIST_FILE = MapDemo/Info.plist;
@@ -391,6 +494,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.coderdream.myfootprint;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "./MapDemo/officialDemoSwift-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";

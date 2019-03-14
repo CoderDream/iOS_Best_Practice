@@ -14,4 +14,12 @@
 #import <MAMapKit/MAMapKit.h>
 // #import "APIKey.h"
 
+#import "CoordinateQuadTree.h"
+#import "ClusterAnnotation.h"
+
+#import "ClusterAnnotationView.h"
+#import "ClusterTableViewCell.h"
+#import "CustomCalloutView.h"
+#import "PoiDetailViewController.h"
+
 #endif /* officialDemoSwift_Bridging_Header_h */
