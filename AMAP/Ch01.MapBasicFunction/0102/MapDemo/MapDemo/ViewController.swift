@@ -43,7 +43,7 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-        
+    
     @IBAction func cityBtnClick(_ sender: UIButton) {
         print("cityBtnClick\(sender.tag)")
         let mapVC = ShowViewController(nibName: "ShowViewController", bundle: nil);
