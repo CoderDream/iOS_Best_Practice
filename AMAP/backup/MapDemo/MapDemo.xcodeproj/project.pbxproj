@@ -13,6 +13,8 @@
 		3F3304A1223167B7009E3285 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F3304A0223167B7009E3285 /* Assets.xcassets */; };
 		3F3304A4223167B8009E3285 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F3304A2223167B8009E3285 /* LaunchScreen.storyboard */; };
 		3F3304AD2232C7DC009E3285 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3F3304AC2232C7DC009E3285 /* README.md */; };
+		3F62CAFE223A77230050C562 /* Pods-MapDemo.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 23BC1C4FA10D373B0FBBC997 /* Pods-MapDemo.debug.xcconfig */; };
+		3F62CAFF223A77260050C562 /* Pods-MapDemo.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 2319E68EF187B5858F18C108 /* Pods-MapDemo.release.xcconfig */; };
 		5E3FC00DF32C5C8FE745B8FE /* Pods_MapDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B6870514269D3F7201F3379 /* Pods_MapDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -164,8 +166,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F3304A4223167B8009E3285 /* LaunchScreen.storyboard in Resources */,
+				3F62CAFF223A77260050C562 /* Pods-MapDemo.release.xcconfig in Resources */,
 				3F3304A1223167B7009E3285 /* Assets.xcassets in Resources */,
 				3F3304AD2232C7DC009E3285 /* README.md in Resources */,
+				3F62CAFE223A77230050C562 /* Pods-MapDemo.debug.xcconfig in Resources */,
 				3F33049F223167B1009E3285 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
