@@ -1,3 +1,6 @@
+## 项目0101
+
+### 设置storyboard
 新增一个 UIView，设置约束： 
 - top: 50  
 - Width: 50  
@@ -32,6 +35,7 @@ class ViewController: UIViewController {
 }
 ```
 
+### 项目0102  
 - 新建碰撞行为对象，并与物理引擎关联
 ```swift
 class ViewController: UIViewController {
@@ -51,6 +55,7 @@ class ViewController: UIViewController {
     }
 }
 ```
+### 项目0103
 - 新增障碍物   
 ```swift
 class ViewController: UIViewController {
@@ -91,6 +96,7 @@ class ViewController: UIViewController {
 }
 ```
 
+### 项目0104  
 - 记录下降方块视图的中心和变换属性   
 ```swift
 class ViewController: UIViewController {
@@ -118,3 +124,32 @@ class ViewController: UIViewController {
 [0.9859211602132415, 0.16721084248270432, -0.16721084248270432, 0.9859211602132415, 0, 0] {193, 249}
 [0.97501672599687772, 0.22213145663397041, -0.22213145663397041, 0.97501672599687772, 0, 0] {195, 249}
 ```
+
+### 项目0105
+
+```swift
+// 添加 UICollisionBehaviorDelegate 协议
+class ViewController: UIViewController, UICollisionBehaviorDelegate {
+    ...    
+    override func viewDidLoad() {
+        ...
+        // 设置代理
+        collision.collisionDelegate = self
+    }
+    
+    /// 实现碰撞行为代理方法
+    func collisionBehavior(_ behavior: UICollisionBehavior, beganContactFor item: UIDynamicItem, withBoundaryIdentifier identifier: NSCopying?, at p: CGPoint) {
+        print("Boundary contact occurred - \(String(describing: identifier))")
+        // 将碰撞 item 的背景颜色更改为黄色，然后再将其淡化为灰色，每次碰到边界时，方块视图都会闪烁黄色
+        let collidingView = item as! UIView
+        collidingView.backgroundColor = UIColor.yellow
+        UIView.animate(withDuration: 0.3) {
+            collidingView.backgroundColor = UIColor.gray
+        }
+    }
+}
+```
+
+
+
+
