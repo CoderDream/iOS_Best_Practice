@@ -20,6 +20,12 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        // 新增 UIView 对象
+        let barrier = UIView(frame: CGRect(x: 0, y: 300, width: 200, height: 20))
+        // 设置背景颜色为红色
+        barrier.backgroundColor = UIColor.red
+        // 添加到当前视图中
+        view.addSubview(barrier)
         // 创建物理引擎对象
         animator = UIDynamicAnimator(referenceView: view)
         // 创建重力行为对象
@@ -27,7 +33,7 @@ class ViewController: UIViewController {
         // 设置物理引擎对象的重力行为
         animator.addBehavior(gravity)
         // 创建碰撞行为对象
-        collision = UICollisionBehavior(items: [square])
+        collision = UICollisionBehavior(items: [square, barrier])
         // 设置是否以参照视图的bounds为边界
         collision.translatesReferenceBoundsIntoBoundary = true
         // 设置物理引擎对象的碰撞行为

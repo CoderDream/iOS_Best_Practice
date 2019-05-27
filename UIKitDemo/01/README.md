@@ -51,3 +51,23 @@ class ViewController: UIViewController {
     }
 }
 ```
+- 新增障碍物   
+```swift
+class ViewController: UIViewController {
+    ...    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // 新增 UIView 对象
+        let barrier = UIView(frame: CGRect(x: 0, y: 300, width: 200, height: 20))
+        // 设置背景颜色为红色
+        barrier.backgroundColor = UIColor.red
+        // 添加到当前视图中
+        view.addSubview(barrier)
+        ...
+        // 创建碰撞行为对象
+        collision = UICollisionBehavior(items: [square, barrier])
+        ...
+    }
+}
+```
+这样设置有缺陷，障碍物可以移动，而且不会停下来。
