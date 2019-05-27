@@ -71,3 +71,22 @@ class ViewController: UIViewController {
 }
 ```
 这样设置有缺陷，障碍物可以移动，而且不会停下来。
+
+- 修复缺陷  
+```swift
+class ViewController: UIViewController {
+    ...
+    override func viewDidLoad() {
+        ...
+        // 新增 UIView 对象（修改宽度，以便正方体可以碰到矩形后掉下来）
+        let barrier = UIView(frame: CGRect(x: 0, y: 300, width: 167, height: 20))
+        ...
+        // 创建碰撞行为对象
+        //collision = UICollisionBehavior(items: [square, barrier])
+        collision = UICollisionBehavior(items: [square])
+        // 添加一个不可见的边界，它与障碍视图具有相同的frame
+        collision.addBoundary(withIdentifier: "barrier" as NSString, for: UIBezierPath(rect: barrier.frame))
+        ...
+    }
+}
+```
