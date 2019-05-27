@@ -150,6 +150,46 @@ class ViewController: UIViewController, UICollisionBehaviorDelegate {
 }
 ```
 
+### 项目0106  
+- 配置 item 属性  
+```swift
+// 添加 UICollisionBehaviorDelegate 协议
+class ViewController: UIViewController, UICollisionBehaviorDelegate {
+    ...    
+    override func viewDidLoad() {
+        ...
+        collision.action = {
+            // 每执行三次action，使用方形视图的当前center和transform向视图添加一个新的方形视图
+            if updateCount % 3 == 0 {
+                // 创建新的方形视图
+                let outline = UIView(frame: self.square.bounds)
+                // 设置变换，和红色方形一致
+                outline.transform = self.square.transform
+                // 设置中心点
+                outline.center = self.square.center
+                // 设置透明值
+                outline.alpha = 0.5
+                // 设置背景颜色
+                outline.backgroundColor = UIColor.clear
+                // 设置边框颜色
+                outline.layer.borderColor = self.square.layer.presentation()?.backgroundColor
+                // 设置边框宽度
+                outline.layer.borderWidth = 1.0
+                // 把新的方形视图添加到当前视图中
+                self.view.addSubview(outline)
+            }
+            // 每执行一次 action，计数器加 1
+            updateCount += 1
+        }
+    }    
+    ...
+}
+```
 
-
-
+在上面的代码中你只改变了 item 的弹性；但是，该 item 的行为类具有许多可以在代码中操作的其他属性。它们如下：  
+- elasticity - 弹性 —— 确定“弹性”碰撞的方式，即物品在碰撞中的弹性或“橡皮”状态。  
+- friction - 摩擦力 —— 确定沿表面滑动时的运动阻力。  
+- density - 密度 —— 当与尺寸size结合时，这将给出item的总质量。质量越大，加速或减速物体越难。  
+- resistance - 阻力 —— 确定任何线性运动的阻力。这与摩擦力形成对比，摩擦力仅适用于滑动运动。  
+- 角度阻力 - angularResistance —— 确定任何旋转运动的阻力。  
+- 允许旋转 - allowsRotation —— 这是一个有趣的，不会模拟任何真实世界的物理属性。将此属性设置为NO时，无论发生任何旋转力，对象都不会旋转。 
