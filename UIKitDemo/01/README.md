@@ -1,12 +1,11 @@
-新增一个 UIView，设置约束：
+新增一个 UIView，设置约束： 
+- top: 50  
+- Width: 50  
+- Height: 50  
+- Horizontally in Container: 0  
 
-- top: 50
-- Width: 50
-- Height: 50
-- Horizontally in Container: 0
-
-- 设置 UIView
-
+### 代码
+- 设置 UIView  
 ```swift
 // UIView 对象
 @IBOutlet weak var square: UIView!
