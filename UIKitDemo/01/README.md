@@ -225,6 +225,44 @@ if !firstContact {
 ```
 
 
+### 项目0108 用户交互
 
+在最后一节中，只要用户点击屏幕，您就会添加另一种动态行为UISnapBehavior。 UISnapBehavior使一个对象跳转到指定的位置，具有类似弹簧的动画。
+删除您在上一节中添加的代码：collisionBehavior（）中的firstContact属性和if语句。 在屏幕上只有一个方形视图，更容易看到UISnapBehavior的效果。
+在viewDidLoad上方添加两个属性：
+```swift
+var square2: UIView!
+var snap: UISnapBehavior!
+```
 
+这将跟踪您的方形视图，以便您可以从视图控制器中的其他位置访问它。 接下来你将使用snap对象。
+在viewDidLoad中，从square的声明中删除let关键字，以便它使用new属性而不是局部变量：
+square2 = UIView(frame: CGRect(x: 100, y: 100, width: 100, height: 100))
+```swift
+square2 = UIView(frame: CGRect(x: 100, y: 100, width: 100, height: 100))
+// 设置背景颜色为黄色
+square2.backgroundColor = UIColor.yellow
+// 将方框添加到视图中
+self.view.addSubview(square2)
+```
 
+最后，为touchesEnded添加一个实现，以便在用户触摸屏幕时创建并添加新的snap行为：
+```swift
+/// 触摸屏幕事件
+override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+    if snap != nil {
+        print("remove")
+        self.animator.removeBehavior(snap)
+    }
+    
+    let touch = (touches as NSSet).anyObject() as! UITouch// touches.anyObject //.first
+    //print("\(touch)")
+    let location: CGPoint = touch.location(in: view)
+    //print("\(location)")
+    //print("\(String(describing: self.square2))")
+    snap = UISnapBehavior(item: self.square2, snapTo: location)
+    
+    print("\(String(describing: snap))")
+    self.animator.addBehavior(snap)
+}
+```
