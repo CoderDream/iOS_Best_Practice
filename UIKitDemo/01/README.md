@@ -193,3 +193,38 @@ class ViewController: UIViewController, UICollisionBehaviorDelegate {
 - resistance - 阻力 —— 确定任何线性运动的阻力。这与摩擦力形成对比，摩擦力仅适用于滑动运动。  
 - 角度阻力 - angularResistance —— 确定任何旋转运动的阻力。  
 - 允许旋转 - allowsRotation —— 这是一个有趣的，不会模拟任何真实世界的物理属性。将此属性设置为NO时，无论发生任何旋转力，对象都不会旋转。 
+
+### 项目0107 动态添加行为
+
+下面在viewDidLoad上面添加以下属性：
+```swift
+var firstContact = false  
+```
+
+将以下代码添加到碰撞代理方法collisionBehavior(behavior:beganContactForItem:withBoundaryIdentifier:atPoint:)的末尾。
+```swift
+// 动态添加行为（下面的代码在整个碰撞期间只执行一次）
+if !firstContact {
+    // 设置标志位，以后不会再进入这个代码块
+    firstContact = true
+    // 创建方块
+    let square = UIView(frame: CGRect(x: 30, y: 0, width: 100, height: 100))
+    // 设置背景颜色
+    square.backgroundColor = UIColor.gray
+    // 加入当前视图中
+    view.addSubview(square)
+    // 添加碰撞行为
+    collision.addItem(square)
+    // 添加重力行为
+    gravity.addItem(square)
+    // 创建虚拟弹簧效果
+    let attach = UIAttachmentBehavior(item: collidingView, attachedTo: square)
+    // 将弹簧效果添加到动画中
+    animator.addBehavior(attach)
+}
+```
+
+
+
+
+
