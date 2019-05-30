@@ -45,3 +45,9 @@ file:///var/mobile/Containers/Data/Application/85E245BA-3ABB-4362-A379-269C30232
 1. [Expanding Cells in iOS Collection Views](https://www.raywenderlich.com/7246-expanding-cells-in-ios-collection-views)
 2. [UICollectionViewCell的扩张效果的实现](https://www.jianshu.com/p/062803251b60)
 3. [笔记及源代码](https://github.com/CoderDream/iOS_Best_Practice/blob/master/UIKitDemo/03/README.md)
+
+
+## 自定义控件：可重复使用的滑块
+
+1. [翻译：自定义控件：可重复使用的滑块](https://www.jianshu.com/p/9de052a42da1)
+2. [原文：How To Make a Custom Control Tutorial: A Reusable Slider](https://www.raywenderlich.com/7595-how-to-make-a-custom-control-tutorial-a-reusable-slider)
