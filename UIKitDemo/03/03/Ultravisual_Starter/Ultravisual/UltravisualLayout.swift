@@ -139,4 +139,10 @@ extension UltravisualLayout {
   override func shouldInvalidateLayout(forBoundsChange newBounds: CGRect) -> Bool {
     return true
   }
+  
+  override func targetContentOffset(forProposedContentOffset proposedContentOffset: CGPoint) -> CGPoint {
+    let itemIndex = round(proposedContentOffset.y / dragOffset)
+    let yOffset = itemIndex * dragOffset
+    return CGPoint(x: 0, y: yOffset)
+  }
 }

@@ -49,6 +49,8 @@ class InspirationsViewController: UICollectionViewController {
         //let layout = collectionViewLayout as! UICollectionViewFlowLayout
         // 设置集合项的高度为100，宽度与视图等宽
         //layout.itemSize = CGSize(width: collectionView!.bounds.width, height: 100)
+        
+        collectionView?.decelerationRate = .fast
     }
 }
 
