@@ -37,6 +37,8 @@ class ViewController: UIViewController {
         
         rangeSlider.backgroundColor = .red
         view.addSubview(rangeSlider)
+        
+        rangeSlider.addTarget(self, action: #selector(rangeSliderValueChanged(_:)), for: .valueChanged)
     }
     
     override func viewDidLayoutSubviews() {
@@ -46,6 +48,11 @@ class ViewController: UIViewController {
         
         rangeSlider.frame = CGRect(x: 0, y: 0, width: width, height: height)
         rangeSlider.center = view.center
+    }
+    
+    @objc func rangeSliderValueChanged(_ rangerSlider: RangeSlider) {
+        let values = "(\(rangerSlider.lowerValue) ,\(rangerSlider.upperValue))"
+        print("Range slider value changed: \(values)")
     }
   
 }

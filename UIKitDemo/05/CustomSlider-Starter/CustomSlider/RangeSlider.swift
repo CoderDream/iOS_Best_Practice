@@ -133,6 +133,7 @@ extension RangeSlider {
         
         CATransaction.commit()
         
+        sendActions(for: .valueChanged)
         return true
     }
     
