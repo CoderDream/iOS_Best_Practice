@@ -77,8 +77,11 @@ layout.itemSize = CGSize(width: collectionView!.bounds.width, height: 100)
 
 请注意，顶部单元格要大得多，有效地展示了一个特色单元格。滚动时，特色单元格下方的单元格会扩展并重叠当前的特征单元格。多棒的效果！
 
-1. [翻译：UICollectionViewCell的扩张效果的实现](https://www.jianshu.com/p/062803251b60)
-2. [原文地址：Expanding Cells in iOS Collection Views](https://www.raywenderlich.com/7246-expanding-cells-in-ios-collection-views)
+具体信息见参考网页1
+
+- 参考网页：
+	1. [翻译：UICollectionViewCell的扩张效果的实现](https://www.jianshu.com/p/062803251b60)
+	2. [原文地址：Expanding Cells in iOS Collection Views](https://www.raywenderlich.com/7246-expanding-cells-in-ios-collection-views)
 
 
 
