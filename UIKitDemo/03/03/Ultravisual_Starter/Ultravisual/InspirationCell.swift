@@ -36,11 +36,15 @@ class InspirationCell: UICollectionViewCell {
   @IBOutlet private weak var imageCoverView: UIView!
   
   @IBOutlet private weak var titleLabel: UILabel!
+  @IBOutlet private weak var timeAndRoomLabel: UILabel!
+  @IBOutlet private weak var speakerLabel: UILabel!
   var inspiration: Inspiration? {
     didSet {
       if let inspiration = inspiration {
         imageView.image = inspiration.backgroundImage
         titleLabel.text = inspiration.title
+        timeAndRoomLabel.text = inspiration.roomAndTime
+        speakerLabel.text = inspiration.speaker
       }
     }
   }
@@ -67,5 +71,7 @@ class InspirationCell: UICollectionViewCell {
     // 高亮的文字不变，其他的文本缩小
     titleLabel.transform = CGAffineTransform(scaleX: scale, y: scale)
     print("title: \(String(describing: titleLabel.text))")
+    timeAndRoomLabel.alpha = delta
+    speakerLabel.alpha = delta
   }
 }
