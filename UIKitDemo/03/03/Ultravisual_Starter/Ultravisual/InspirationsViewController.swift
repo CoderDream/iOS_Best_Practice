@@ -46,9 +46,9 @@ class InspirationsViewController: UICollectionViewController {
         // 设置视图的背景颜色
         collectionView?.backgroundColor = .clear
         // 设置集合视图的布局
-        let layout = collectionViewLayout as! UICollectionViewFlowLayout
+        //let layout = collectionViewLayout as! UICollectionViewFlowLayout
         // 设置集合项的高度为100，宽度与视图等宽
-        layout.itemSize = CGSize(width: collectionView!.bounds.width, height: 100)
+        //layout.itemSize = CGSize(width: collectionView!.bounds.width, height: 100)
     }
 }
 

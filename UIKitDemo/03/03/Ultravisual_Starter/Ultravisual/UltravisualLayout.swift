@@ -31,9 +31,9 @@ import UIKit
 // The heights are declared as constants outside of the class so they can be easily referenced elsewhere 
 struct UltravisualLayoutConstants {
   struct Cell {
-    // The height of the non-featured cell 
+    // The height of the non-featured cell
     static let standardHeight: CGFloat = 100
-    // The height of the first visible cell 
+    // The height of the first visible cell
     static let featuredHeight: CGFloat = 280
   }
 }
@@ -41,42 +41,42 @@ struct UltravisualLayoutConstants {
 // MARK: Properties and Variables
 // 自定义布局类
 class UltravisualLayout: UICollectionViewLayout {
-  // The amount the user needs to scroll before the featured cell changes 
+  // The amount the user needs to scroll before the featured cell changes
   let dragOffset: CGFloat = 180.0
   // 自定义缓存（属性数组）
   var cache: [UICollectionViewLayoutAttributes] = []
   
-  // Returns the item index of the currently featured cell 
+  // Returns the item index of the currently featured cell
   var featuredItemIndex: Int {
-      // Use max to make sure the featureItemIndex is never < 0 
-      return max(0, Int(collectionView!.contentOffset.y / dragOffset))
+    // Use max to make sure the featureItemIndex is never < 0
+    return max(0, Int(collectionView!.contentOffset.y / dragOffset))
   }
   
-  // Returns a value between 0 and 1 that represents how close the next cell is to becoming the featured cell 
+  // Returns a value between 0 and 1 that represents how close the next cell is to becoming the featured cell
   var nextItemPercentageOffset: CGFloat {
-      return (collectionView!.contentOffset.y / dragOffset) - CGFloat(featuredItemIndex)
+    return (collectionView!.contentOffset.y / dragOffset) - CGFloat(featuredItemIndex)
   }
   
-  // Returns the width of the collection view 
+  // Returns the width of the collection view
   var width: CGFloat {
-      return collectionView!.bounds.width
+    return collectionView!.bounds.width
   }
   
-  // Returns the height of the collection view 
+  // Returns the height of the collection view
   var height: CGFloat {
-      return collectionView!.bounds.height
+    return collectionView!.bounds.height
   }
   
-  // Returns the number of items in the collection view 
+  // Returns the number of items in the collection view
   var numberOfItems: Int {
-      return collectionView!.numberOfItems(inSection: 0)
+    return collectionView!.numberOfItems(inSection: 0)
   }
 }
 
 // MARK: UICollectionViewLayout
 // 自定义布局扩展
 extension UltravisualLayout {
-  // Return the size of all the content in the collection view 
+  // Return the size of all the content in the collection view
   override var collectionViewContentSize : CGSize {
     let contentHeight = (CGFloat(numberOfItems) * dragOffset) + (height - dragOffset)
     return CGSize(width: width, height: contentHeight)
@@ -84,9 +84,47 @@ extension UltravisualLayout {
   
   override func prepare() {
     cache.removeAll(keepingCapacity: false)
+    let standardHeight = UltravisualLayoutConstants.Cell.standardHeight
+    let featuredHeight = UltravisualLayoutConstants.Cell.featuredHeight
+    
+    var frame = CGRect.zero
+    var y: CGFloat = 0
+    
+    for item in 0 ..< numberOfItems {
+      // 1 创建当前单元格的索引路径，然后为其创建默认属性
+      let indexPath = IndexPath(item: item, section: 0)
+      let attributes = UICollectionViewLayoutAttributes(forCellWith: indexPath)
+      
+      // 2 设置z轴
+      attributes.zIndex = item
+      var height = standardHeight
+      
+      // 3 确定当前单元格的状态 - featured, next or standard
+      if indexPath.item == featuredItemIndex {
+        // 4 如果单元格当前处于特征单元格位置，则计算 yOffset 并使用该值来计算得到单元格的新 y 值。
+        // 之后，将单元格的高度设置为特征高度。
+        let yOffset = standardHeight * nextItemPercentageOffset
+        y = collectionView!.contentOffset.y - yOffset
+        height = featuredHeight
+      } else if indexPath.item == (featuredItemIndex + 1) && indexPath.item != numberOfItems {
+        // 5 如果单元格在下一行，则首先计算最大 y 可能（在这种情况下，大于特征单元格）并将其与计算高度结合，最终得到正确的 y 值。
+        let maxY = y + standardHeight
+        height = standardHeight + max((featuredHeight - standardHeight) * nextItemPercentageOffset, 0)
+        y = maxY - height
+      }
+      // 6 为每个单元格设置一些公共元素
+      // 创建 frame
+      frame = CGRect(x: 0, y: y, width: width, height: height)
+      // 设置计算的属性
+      attributes.frame = frame
+      // 更新缓存
+      cache.append(attributes)
+      // 更有 y
+      y = frame.maxY
+    }
   }
   
-  // Return all attributes in the cache whose frame intersects with the rect passed to the method 
+  // Return all attributes in the cache whose frame intersects with the rect passed to the method
   override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
     var layoutAttributes: [UICollectionViewLayoutAttributes] = []
     for attributes in cache {
@@ -97,7 +135,7 @@ extension UltravisualLayout {
     return layoutAttributes
   }
   
-  // Return true so that the layout is continuously invalidated as the user scrolls 
+  // Return true so that the layout is continuously invalidated as the user scrolls
   override func shouldInvalidateLayout(forBoundsChange newBounds: CGRect) -> Bool {
     return true
   }
