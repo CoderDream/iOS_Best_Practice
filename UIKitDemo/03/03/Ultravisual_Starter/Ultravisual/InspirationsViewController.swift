@@ -31,7 +31,7 @@ import UIKit
 class InspirationsViewController: UICollectionViewController {
     let inspirations = Inspiration.allInspirations()
     // 颜色数组
-    let colors = UIColor.palette()
+    //let colors = UIColor.palette()
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return UIStatusBarStyle.lightContent
@@ -58,10 +58,14 @@ extension InspirationsViewController {
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(
-            withReuseIdentifier: InspirationCell.reuseIdentifier, for: indexPath
-        )
-        cell.contentView.backgroundColor = colors[indexPath.item]
+//        let cell = collectionView.dequeueReusableCell(
+//            withReuseIdentifier: InspirationCell.reuseIdentifier, for: indexPath
+//        )
+//        cell.contentView.backgroundColor = colors[indexPath.item]
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: InspirationCell.reuseIdentifier, for: indexPath) as? InspirationCell else {
+            return UICollectionViewCell()
+        }
+        cell.inspiration = inspirations[indexPath.item]
         return cell
     }
 }

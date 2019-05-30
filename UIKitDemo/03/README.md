@@ -71,6 +71,9 @@ layout.itemSize = CGSize(width: collectionView!.bounds.width, height: 100)
 请注意，顶部单元格要大得多，有效地展示了一个特色单元格。滚动时，特色单元格下方的单元格会扩展并重叠当前的特征单元格。多棒的效果！
 
 
+### 添加cell图像
+
+
 
 
 

@@ -18,13 +18,39 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <collectionViewLayout key="collectionViewLayout" id="rdh-NT-Q7P" customClass="UltravisualLayout" customModule="Ultravisual" customModuleProvider="target"/>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="InspirationCell" id="n3U-hs-Bjw">
-                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="InspirationCell" id="n3U-hs-Bjw" customClass="InspirationCell" customModule="Ultravisual" customModuleProvider="target">
+                                <rect key="frame" x="87.5" y="0.0" width="200" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="200" height="50"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LJo-Mv-oxC">
+                                            <rect key="frame" x="0.0" y="-115" width="200" height="280"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="280" id="BeW-pf-k9R"/>
+                                            </constraints>
+                                        </imageView>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YWP-9E-2J8">
+                                            <rect key="frame" x="0.0" y="0.0" width="200" height="50"/>
+                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </view>
+                                    </subviews>
                                 </view>
+                                <constraints>
+                                    <constraint firstItem="YWP-9E-2J8" firstAttribute="top" secondItem="n3U-hs-Bjw" secondAttribute="top" id="6Rk-yC-kiK"/>
+                                    <constraint firstItem="YWP-9E-2J8" firstAttribute="leading" secondItem="n3U-hs-Bjw" secondAttribute="leading" id="8gC-aR-eO3"/>
+                                    <constraint firstAttribute="trailing" secondItem="LJo-Mv-oxC" secondAttribute="trailing" id="9od-9S-8qI"/>
+                                    <constraint firstAttribute="bottom" secondItem="YWP-9E-2J8" secondAttribute="bottom" id="GvX-6Q-pWh"/>
+                                    <constraint firstAttribute="trailing" secondItem="YWP-9E-2J8" secondAttribute="trailing" id="MF5-Wh-Av7"/>
+                                    <constraint firstItem="LJo-Mv-oxC" firstAttribute="centerY" secondItem="n3U-hs-Bjw" secondAttribute="centerY" id="QkU-u6-RdV"/>
+                                    <constraint firstItem="LJo-Mv-oxC" firstAttribute="leading" secondItem="n3U-hs-Bjw" secondAttribute="leading" id="WVd-5t-gXZ"/>
+                                </constraints>
+                                <size key="customSize" width="200" height="50"/>
+                                <connections>
+                                    <outlet property="imageCoverView" destination="YWP-9E-2J8" id="HXP-1a-1xK"/>
+                                    <outlet property="imageView" destination="LJo-Mv-oxC" id="apb-39-0P8"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
@@ -35,7 +61,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K9E-Uw-G83" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="544" y="432"/>
+            <point key="canvasLocation" x="543.20000000000005" y="431.33433283358323"/>
         </scene>
     </scenes>
 </document>

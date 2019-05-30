@@ -42,4 +42,22 @@ class InspirationCell: UICollectionViewCell {
       }
     }
   }
+  
+  override func apply(_ layoutAttributes: UICollectionViewLayoutAttributes) {
+    super.apply(layoutAttributes)
+    
+    // 1 高度常数
+    let standardHeight = UltravisualLayoutConstants.Cell.standardHeight
+    let featuredHeight = UltravisualLayoutConstants.Cell.featuredHeight
+    
+    // 2 计算单元格移动时的增量，用于计算在下一步中调整 alpha 的程度
+    let delta = 1 - (
+      (featuredHeight - frame.height)/(featuredHeight - standardHeight)
+    )
+    
+    // 3 根据范围常量和 delta 值更新单元格的 alpha
+    let minAlpha: CGFloat = 0.3
+    let maxAlpha: CGFloat = 0.75
+    imageCoverView.alpha = maxAlpha - (delta * (maxAlpha - minAlpha))
+  }
 }
