@@ -35,21 +35,34 @@
                                             <rect key="frame" x="0.0" y="0.0" width="200" height="50"/>
                                             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Inspiration" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iPl-P2-Js2">
+                                            <rect key="frame" x="0.0" y="3" width="200" height="44"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="44" id="qOW-hC-zT4"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="38"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                 </view>
                                 <constraints>
                                     <constraint firstItem="YWP-9E-2J8" firstAttribute="top" secondItem="n3U-hs-Bjw" secondAttribute="top" id="6Rk-yC-kiK"/>
                                     <constraint firstItem="YWP-9E-2J8" firstAttribute="leading" secondItem="n3U-hs-Bjw" secondAttribute="leading" id="8gC-aR-eO3"/>
                                     <constraint firstAttribute="trailing" secondItem="LJo-Mv-oxC" secondAttribute="trailing" id="9od-9S-8qI"/>
+                                    <constraint firstAttribute="trailing" secondItem="iPl-P2-Js2" secondAttribute="trailing" id="DxR-su-DMZ"/>
                                     <constraint firstAttribute="bottom" secondItem="YWP-9E-2J8" secondAttribute="bottom" id="GvX-6Q-pWh"/>
                                     <constraint firstAttribute="trailing" secondItem="YWP-9E-2J8" secondAttribute="trailing" id="MF5-Wh-Av7"/>
+                                    <constraint firstItem="iPl-P2-Js2" firstAttribute="leading" secondItem="n3U-hs-Bjw" secondAttribute="leading" id="QCE-zD-XHh"/>
                                     <constraint firstItem="LJo-Mv-oxC" firstAttribute="centerY" secondItem="n3U-hs-Bjw" secondAttribute="centerY" id="QkU-u6-RdV"/>
                                     <constraint firstItem="LJo-Mv-oxC" firstAttribute="leading" secondItem="n3U-hs-Bjw" secondAttribute="leading" id="WVd-5t-gXZ"/>
+                                    <constraint firstItem="iPl-P2-Js2" firstAttribute="centerY" secondItem="n3U-hs-Bjw" secondAttribute="centerY" id="Wpg-z0-i0y"/>
                                 </constraints>
                                 <size key="customSize" width="200" height="50"/>
                                 <connections>
                                     <outlet property="imageCoverView" destination="YWP-9E-2J8" id="HXP-1a-1xK"/>
                                     <outlet property="imageView" destination="LJo-Mv-oxC" id="apb-39-0P8"/>
+                                    <outlet property="titleLabel" destination="iPl-P2-Js2" id="6Y6-YF-AGI"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
