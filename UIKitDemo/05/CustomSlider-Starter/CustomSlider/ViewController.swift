@@ -39,6 +39,16 @@ class ViewController: UIViewController {
         view.addSubview(rangeSlider)
         
         rangeSlider.addTarget(self, action: #selector(rangeSliderValueChanged(_:)), for: .valueChanged)
+        
+        // #imageLiteral(resourceName: "RectThumb")
+        
+        // #imageLiteral(resourceName: "HighlightedRect")
+        let time = DispatchTime.now() + 1
+        DispatchQueue.main.asyncAfter(deadline: time) {
+            self.rangeSlider.trackHighlightTintColor = .red
+            self.rangeSlider.thumbImage = #imageLiteral(resourceName: "RectThumb")
+            self.rangeSlider.highlightThumbImage = #imageLiteral(resourceName: "HighlightedRect")
+        }        
     }
     
     override func viewDidLayoutSubviews() {

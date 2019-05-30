@@ -36,21 +36,61 @@ class RangeSlider: UIControl {
         }
     }
     
+    
     // 用于跟踪触摸属性
     private var previousLocation = CGPoint()
     
     
-    var minimumValue: CGFloat = 0
-    var maximumValue: CGFloat = 1
-    var lowerValue: CGFloat = 0.2
-    var upperValue: CGFloat = 0.8
+    var minimumValue: CGFloat = 0 {
+        didSet {
+            updateLayerFrames()
+        }
+    }
+    var maximumValue: CGFloat = 1 {
+        didSet {
+            updateLayerFrames()
+        }
+    }
+    var lowerValue: CGFloat = 0.2 {
+        didSet {
+            updateLayerFrames()
+        }
+    }
+    var upperValue: CGFloat = 0.8 {
+        didSet {
+            updateLayerFrames()
+        }
+    }
     
-    var trackTintColor = UIColor(white: 0.9, alpha: 1)
-    var trackHighlightTintColor = UIColor(red: 0, green: 0.45, blue: 0.94, alpha: 1)    
-    
+    var trackTintColor = UIColor(white: 0.9, alpha: 1) {
+        didSet {
+            trackLayer.setNeedsDisplay()
+        }
+    }
+    var trackHighlightTintColor = UIColor(red: 0, green: 0.45, blue: 0.94, alpha: 1) {
+        didSet {
+            trackLayer.setNeedsDisplay()
+        }
+    }
     
     // #imageLiteral(resourceName: "Oval")
-    var thumbImage = #imageLiteral(resourceName: "Oval")
+    var thumbImage = #imageLiteral(resourceName: "Oval") {
+        didSet {
+            upperThumbImageView.image = thumbImage
+            lowerThumbImageView.image = thumbImage
+            updateLayerFrames()
+        }
+    }
+    
+    // #imageLiteral(resourceName: "HighlightedOval")
+    var highlightThumbImage = #imageLiteral(resourceName: "HighlightedOval") {
+        didSet {
+            upperThumbImageView.highlightedImage = highlightThumbImage
+            lowerThumbImageView.highlightedImage = highlightThumbImage
+            updateLayerFrames()
+        }
+    }
+    
     private let trackLayer = RangeSliderTrackLayer()  //CALayer()
     private let lowerThumbImageView = UIImageView()
     private let upperThumbImageView = UIImageView()
@@ -86,10 +126,13 @@ class RangeSlider: UIControl {
     }
     
     private func updateLayerFrames() {
+        CATransaction.begin()
+        CATransaction.setDisableActions(true)
         trackLayer.frame = bounds.insetBy(dx: 0.0, dy: bounds.height / 3)
         trackLayer.setNeedsDisplay()
         lowerThumbImageView.frame = CGRect(origin: thumbOriginForValue(lowerValue), size: thumbImage.size)
         upperThumbImageView.frame = CGRect(origin: thumbOriginForValue(upperValue), size: thumbImage.size)
+        CATransaction.commit()
     }
 }
 
@@ -133,12 +176,12 @@ extension RangeSlider {
         }
         
         // 3
-        CATransaction.begin()
-        CATransaction.setDisableActions(true)
-        
-        updateLayerFrames()
-        
-        CATransaction.commit()
+//        CATransaction.begin()
+//        CATransaction.setDisableActions(true)
+//        
+//        updateLayerFrames()
+//        
+//        CATransaction.commit()
         
         sendActions(for: .valueChanged)
         return true
