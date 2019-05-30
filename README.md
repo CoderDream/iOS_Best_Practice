@@ -39,3 +39,9 @@ file:///var/mobile/Containers/Data/Application/85E245BA-3ABB-4362-A379-269C30232
 
 ## Notification
 ### [Swift - UserNotifications框架使用详解2（发送本地通知）](http://www.hangge.com/blog/cache/detail_1851.html)
+
+## UICollectionViewCell的扩张效果的实现
+
+1. [Expanding Cells in iOS Collection Views](https://www.raywenderlich.com/7246-expanding-cells-in-ios-collection-views)
+2. [UICollectionViewCell的扩张效果的实现](https://www.jianshu.com/p/062803251b60)
+3. [笔记及源代码](https://github.com/CoderDream/iOS_Best_Practice/blob/master/UIKitDemo/03/README.md)
