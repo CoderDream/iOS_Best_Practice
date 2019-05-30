@@ -61,5 +61,11 @@ class InspirationCell: UICollectionViewCell {
     let minAlpha: CGFloat = 0.3
     let maxAlpha: CGFloat = 0.75
     imageCoverView.alpha = maxAlpha - (delta * (maxAlpha - minAlpha))
+    
+    // 4 delta 的值在 0 到 1 之间， scale （缩放比例）的值在 0.5 到 1 之间
+    let scale = max(delta, 0.5)
+    // 高亮的文字不变，其他的文本缩小
+    titleLabel.transform = CGAffineTransform(scaleX: scale, y: scale)
+    print("title: \(String(describing: titleLabel.text))")
   }
 }
