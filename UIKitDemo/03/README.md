@@ -68,6 +68,14 @@ layout.itemSize = CGSize(width: collectionView!.bounds.width, height: 100)
 这两行是显示同样大小的多色单元格的基本布局。 现在已经在UltravisualLayout中指定了布局代码并在故事板中设置了自定义布局类，您不再需要这些行。
 构建并运行，你会看到我们想要的结果
 
+![](snapshot/003.webp)  
+
+![](snapshot/001.png)  
+
+![](snapshot/002.png)  
+
+![](snapshot/003.gif)  
+
 请注意，顶部单元格要大得多，有效地展示了一个特色单元格。滚动时，特色单元格下方的单元格会扩展并重叠当前的特征单元格。多棒的效果！
 
 
