@@ -44,16 +44,23 @@ class RangeSlider: UIControl {
     var maximumValue: CGFloat = 1
     var lowerValue: CGFloat = 0.2
     var upperValue: CGFloat = 0.8
+    
+    var trackTintColor = UIColor(white: 0.9, alpha: 1)
+    var trackHighlightTintColor = UIColor(red: 0, green: 0.45, blue: 0.94, alpha: 1)    
+    
+    
     // #imageLiteral(resourceName: "Oval")
     var thumbImage = #imageLiteral(resourceName: "Oval")
-    private let trackLayer = CALayer()
+    private let trackLayer = RangeSliderTrackLayer()  //CALayer()
     private let lowerThumbImageView = UIImageView()
     private let upperThumbImageView = UIImageView()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        trackLayer.backgroundColor = UIColor.blue.cgColor
+        //trackLayer.backgroundColor = UIColor.blue.cgColor
+        trackLayer.rangeSlider = self
+        trackLayer.contentsScale = UIScreen.main.scale
         layer.addSublayer(trackLayer)
         
         lowerThumbImageView.image = thumbImage
