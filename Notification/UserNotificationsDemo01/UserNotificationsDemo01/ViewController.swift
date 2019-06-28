@@ -17,10 +17,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         notification1()
-        notification2()
-        notification3()
-        notification4()
-        notification5()
+        //notification2()
+        //notification3()
+        //notification4()
+        //notification5()
         print("viewDidLoad end")
     }
     

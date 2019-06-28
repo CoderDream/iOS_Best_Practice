@@ -73,8 +73,89 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 print("provisional")
             }
         }
+        f1()
         
         return true
+    }
+    
+    
+    func f1() {
+        UNUserNotificationCenter.current().getNotificationSettings { settings in
+            var message = "是否允许通知："
+            switch settings.authorizationStatus {
+            case .authorized:
+                message.append("允许")
+            case .notDetermined:
+                message.append("未确定")
+            case .denied:
+                message.append("不允许")
+            case .provisional:
+                print("provisional")
+            }
+            
+            message.append("\n声音：")
+            switch settings.soundSetting{
+            case .enabled:
+                message.append("开启")
+            case .disabled:
+                message.append("关闭")
+            case .notSupported:
+                message.append("不支持")
+            }
+            
+            message.append("\n应用图标标记：")
+            switch settings.badgeSetting{
+            case .enabled:
+                message.append("开启")
+            case .disabled:
+                message.append("关闭")
+            case .notSupported:
+                message.append("不支持")
+            }
+            
+            message.append("\n在锁定屏幕上显示：")
+            switch settings.lockScreenSetting{
+            case .enabled:
+                message.append("开启")
+            case .disabled:
+                message.append("关闭")
+            case .notSupported:
+                message.append("不支持")
+            }
+            
+            message.append("\n在历史记录中显示：")
+            switch settings.notificationCenterSetting{
+            case .enabled:
+                message.append("开启")
+            case .disabled:
+                message.append("关闭")
+            case .notSupported:
+                message.append("不支持")
+            }
+            
+            message.append("\n横幅显示：")
+            switch settings.alertSetting{
+            case .enabled:
+                message.append("开启")
+            case .disabled:
+                message.append("关闭")
+            case .notSupported:
+                message.append("不支持")
+            }
+            
+            message.append("\n显示预览：")
+            switch settings.showPreviewsSetting{
+            case .always:
+                message.append("始终（默认）")
+            case .whenAuthenticated:
+                message.append("解锁时")
+            case .never:
+                message.append("从不")
+            }
+            
+            
+            print(message)
+        }
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
