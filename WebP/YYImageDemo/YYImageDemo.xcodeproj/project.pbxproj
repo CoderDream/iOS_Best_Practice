@@ -12,6 +12,7 @@
 		3F16915622E59C4D004E32AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F16915422E59C4D004E32AD /* Main.storyboard */; };
 		3F16915822E59C4F004E32AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F16915722E59C4F004E32AD /* Assets.xcassets */; };
 		3F16915B22E59C4F004E32AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F16915922E59C4F004E32AD /* LaunchScreen.storyboard */; };
+		3F16916822E5A88B004E32AD /* balloon_scene_640_960.webp in Resources */ = {isa = PBXBuildFile; fileRef = 3F16916722E5A88B004E32AD /* balloon_scene_640_960.webp */; };
 		F92D293F52B443DB3A1E2E84 /* Pods_YYImageDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEA95512C309FEF52E4C138E /* Pods_YYImageDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +25,7 @@
 		3F16915722E59C4F004E32AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F16915A22E59C4F004E32AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F16915C22E59C4F004E32AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F16916722E5A88B004E32AD /* balloon_scene_640_960.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = balloon_scene_640_960.webp; sourceTree = "<group>"; };
 		BEA95512C309FEF52E4C138E /* Pods_YYImageDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YYImageDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF8B8EC4B9089742EDCB46CD /* Pods-YYImageDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YYImageDemo.release.xcconfig"; path = "Target Support Files/Pods-YYImageDemo/Pods-YYImageDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -61,6 +63,7 @@
 		3F16914F22E59C4D004E32AD /* YYImageDemo */ = {
 			isa = PBXGroup;
 			children = (
+				3F16916622E5A87A004E32AD /* images */,
 				3F16915022E59C4D004E32AD /* AppDelegate.swift */,
 				3F16915222E59C4D004E32AD /* ViewController.swift */,
 				3F16915422E59C4D004E32AD /* Main.storyboard */,
@@ -71,13 +74,20 @@
 			path = YYImageDemo;
 			sourceTree = "<group>";
 		};
+		3F16916622E5A87A004E32AD /* images */ = {
+			isa = PBXGroup;
+			children = (
+				3F16916722E5A88B004E32AD /* balloon_scene_640_960.webp */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
 		72B3DF88187BE38C5AB5E5C5 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				09AAFC128D5ED73C3932490E /* Pods-YYImageDemo.debug.xcconfig */,
 				CF8B8EC4B9089742EDCB46CD /* Pods-YYImageDemo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -150,6 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F16915B22E59C4F004E32AD /* LaunchScreen.storyboard in Resources */,
+				3F16916822E5A88B004E32AD /* balloon_scene_640_960.webp in Resources */,
 				3F16915822E59C4F004E32AD /* Assets.xcassets in Resources */,
 				3F16915622E59C4D004E32AD /* Main.storyboard in Resources */,
 			);
