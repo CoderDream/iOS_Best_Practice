@@ -1,0 +1,47 @@
+PODS:
+  - libwebp (1.0.2):
+    - libwebp/core (= 1.0.2)
+    - libwebp/dec (= 1.0.2)
+    - libwebp/demux (= 1.0.2)
+    - libwebp/dsp (= 1.0.2)
+    - libwebp/enc (= 1.0.2)
+    - libwebp/mux (= 1.0.2)
+    - libwebp/utils (= 1.0.2)
+    - libwebp/webp (= 1.0.2)
+  - libwebp/core (1.0.2):
+    - libwebp/webp
+  - libwebp/dec (1.0.2):
+    - libwebp/core
+  - libwebp/demux (1.0.2):
+    - libwebp/core
+  - libwebp/dsp (1.0.2):
+    - libwebp/core
+  - libwebp/enc (1.0.2):
+    - libwebp/core
+  - libwebp/mux (1.0.2):
+    - libwebp/core
+  - libwebp/utils (1.0.2):
+    - libwebp/core
+  - libwebp/webp (1.0.2)
+  - SDWebImage/Core (5.0.2)
+  - SDWebImageWebPCoder (0.2.0):
+    - libwebp (~> 1.0)
+    - SDWebImage/Core (~> 5.0)
+
+DEPENDENCIES:
+  - SDWebImageWebPCoder
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - libwebp
+    - SDWebImage
+    - SDWebImageWebPCoder
+
+SPEC CHECKSUMS:
+  libwebp: 00eb2a159eb1b5ec02a44b573523a3ae92b077f7
+  SDWebImage: 6764b5fa0f73c203728052955dbefa2bf1f33282
+  SDWebImageWebPCoder: 22ba38003527ade6ca3874f83b8216e655d942ae
+
+PODFILE CHECKSUM: aa000b6880ed458a47bac2ba6875752be6f9862b
+
+COCOAPODS: 1.6.1
