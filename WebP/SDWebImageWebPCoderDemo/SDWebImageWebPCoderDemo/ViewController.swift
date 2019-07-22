@@ -25,13 +25,24 @@ class ViewController: UIViewController {
         let imagePath = Bundle.main.path(forResource: "balloon_scene_640_960", ofType: "webp")
         // WebP online image loading 获取图片 URL
         let webpURL: URL = URL.init(fileURLWithPath: imagePath!)
+        let image5 = UIImage.init(contentsOfFile: imagePath!)
+        
+        print("image5@@@@@：\(String(describing: image5))")
         let imageView: UIImageView = UIImageView(frame: CGRect(x: 100, y: 100, width: 200, height: 300))
-        imageView.sd_setImage(with: webpURL)
+        imageView.sd_setImage(with: webpURL) { (image, error, cacheType, url) in
+            print("image2@@@@@：\(String(describing: image))")
+            print("image2@@@@@：\(String(describing: error))")
+            print("image2@@@@@：\(String(describing: cacheType))")
+            print("image2@@@@@：\(String(describing: url))")
+        }
+        print("image2@@@@@：\(String(describing: imageView))")
+        print("image2@@@@@：\(String(describing: imageView.image))")
+        imageView.isHidden = true
        // let image = imageView.
         //let image2 = image //  cropingImageFromImage(imageFromImage: image!, inRext: rect)
        // let imageView2: UIImageView = UIImageView(frame: CGRect(x: 100, y: 400, width: 200, height: 300))
         
-        //self.view.addSubview(imageView)
+        self.view.addSubview(imageView)
         
         // 获取本地图片路径
         //let imagePath = Bundle.main.path(forResource: "balloon_scene_640_960", ofType: "webp")
